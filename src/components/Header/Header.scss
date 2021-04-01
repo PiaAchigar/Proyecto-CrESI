@@ -1,0 +1,62 @@
+@use "../../sass/colors" as color;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  background-color: color.$blanco;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  .logo {
+    flex: 0.1;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 3rem;
+    }
+    h1 {
+      color: color.$rojo;
+      margin-left: 1rem;
+    }
+  }
+  .main-links {
+    flex: 0.5;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        a {
+          color: black;
+        }
+      }
+      .active {
+        border-bottom: solid 1px black;
+      }
+    }
+  }
+  .right-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.15;
+    margin-right: 2rem;
+
+    .button {
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+    }
+    .button.active {
+      border: solid 2px black;
+    }
+    .cart.active {
+      border-bottom: solid 1px black;
+    }
+  }
+}

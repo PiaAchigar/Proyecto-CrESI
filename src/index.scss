@@ -1,0 +1,26 @@
+/*  */
+/* Normalizador del css del UserAgent de los navegadores  */
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+
+  /* Esta es la clase que se aplica a cada contenedor de cada pagina ( /pages )  */
+  .page-wrapper {
+    flex: 1 0 auto;
+    background-color: lightgray;
+    padding: 1rem;
+  }
+}
