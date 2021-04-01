@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import logoheader from "../../assets/img/logo-header.png";
 //Iconos
 import { MdShoppingCart } from "react-icons/md";
+
 //Style
 import "./Header.scss";
 

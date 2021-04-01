@@ -1,12 +1,12 @@
-@use "../../sass/colors" as color;
+@use "../../sass/colors";
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4.5rem;
-  background-color: color.$blanco;
-  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.5);
+  background-color: colors.$blanco;
+  box-shadow: 0px 1px 6px 1px colors.$shadow;
   z-index: 1;
 
   .logo {
@@ -19,7 +19,7 @@
       width: 3rem;
     }
     h1 {
-      color: color.$rojo;
+      color: colors.$rojo;
       margin-left: 1rem;
     }
   }
@@ -48,15 +48,15 @@
 
     .button {
       color: white;
-      background-color: red;
+      background-color: colors.$rojo;
       border-radius: 5px;
       padding: 0.5rem 1rem;
     }
     .button.active {
-      border: solid 2px black;
+      border: solid 2px colors.$negro;
     }
     .cart.active {
-      border-bottom: solid 1px black;
+      border-bottom: solid 1px colors.$negro;
     }
   }
 }
