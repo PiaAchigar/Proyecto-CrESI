@@ -16,11 +16,33 @@
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
 
   /* Esta es la clase que se aplica a cada contenedor de cada pagina ( /pages )  */
   .page-wrapper {
     flex: 1 0 auto;
     background-color: #fff;
     padding: 1rem;
+    -webkit-animation: appear 0.5s ease-in;
+    animation: appear 0.5s ease-in;
+    margin-top: 4.5rem;
+
+    @-webkit-keyframes appear {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   }
 }
