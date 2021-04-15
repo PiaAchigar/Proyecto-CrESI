@@ -1,6 +1,143 @@
+@use "../../sass/colors";
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
 .footer {
   width: 100%;
   min-height: 40vh;
-  background-color: gray;
+  background-color:colors.$gris;
   margin-top: auto; //Para que siempre el footer este debajo, aun si la pagina tiene poco contenido
+  //box-sizing: border-box;
+  .padre{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: .5rem;
+    .terminos-politicas{
+      //flex-direction: column;
+      //flex-wrap: nowrap;
+        padding: .1rem 0 .1rem 7rem;
+        margin: 1rem .5rem 2.5rem .5rem;
+      }
+      li{
+        color: colors.$gris-oscuro;
+        padding: auto 1rem;
+        font-size: .9rem;
+        //align-items: flex-end;
+        .logo img{
+          width: 5.5rem;
+          height: 6rem;
+        }
+        p{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 12rem;
+          height: 2.5rem;
+        }
+      }
+      .nosotros-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        padding: .8rem;
+        width: 100%;
+        .nosotros{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 55%;
+          ul li{
+            padding: .2rem;
+          }
+        }
+        .links{
+          display: flex;
+          margin-left: 2rem;
+          width: 50%;
+          ul li{
+            padding: .2rem;
+          }
+        }
+      }
+    .suscripcion-donacion{
+      display: flex;
+      flex-direction: column;
+      padding: .2rem;
+      width: 100%;
+      .suscripcion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+        ul li h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      }
+      .donacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+      }
+    }
+    .redes{
+      //display: flex;
+      padding: .5rem;
+      width: 100%;
+      ul li{
+        display: inherit;
+        width: 10%;
+      }
+    }
+    hr{
+      height: 0;
+      border: solid 0.5px colors.$gris-medio;
+      width: 80%;
+      margin: 0 auto;
+    }
+    h1{
+      color:colors.$rojo;
+      font-size: 1rem;
+  
+    }
+
+  }
+  
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1rem;
+
+    @media screen and (min-width: 768px) {
+      position: unset;
+      margin-left: 1rem;
+    }
+    img {
+      width: 5rem;
+    }
+    h1 {
+      color: colors.$rojo;
+      margin-left: 1rem;
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: unset;
+      }
+    }
+  }
+
 }
+
