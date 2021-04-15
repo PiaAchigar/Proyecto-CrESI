@@ -8,7 +8,7 @@ import "./HeroSwitcher.scss";
 
 //Imagen principal que cambia su estado cada 2 segundos y switchea de una imagen a otra
 const HeroSwitcher = () => {
-  const [hero, setHero] = useState("mobile");
+  const [hero, setHero] = useState("");
 
   useEffect(() => {
     const heroe = setTimeout(() => {
@@ -19,9 +19,9 @@ const HeroSwitcher = () => {
   }, [hero]);
 
   return hero === "mobile" ? (
-    <img className="hero-img" src={heroapp} alt="Mobile  with cresi app open" />
+    <img className="hero-img" src={heroapp} alt="Mobile  with cresi app open" height="300px" />
   ) : (
-    <img className="hero-img" src={heroweb} alt="Laptop with cresi web open" />
+    <img className="hero-img" src={heroweb} alt="Laptop with cresi web open" height="300px" />
   );
 };
 
