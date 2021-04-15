@@ -1,0 +1,56 @@
+@use "../../sass/colors";
+
+
+.iconos {
+  width: 3rem;
+}
+
+.container {
+  margin: 2rem;
+  max-width: 350px;
+  color: #707070;
+  border-radius: 2%;
+  box-shadow: 0px 3px 6px 1px colors.$shadow;
+  text-align: center;
+  h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: colors.$negro;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-objetivo {
+  background-color: colors.$amarillo;
+  border-radius: 5%;
+  font-size: .6rem;
+  width: 50%;
+  text-align: center;
+  margin: 1rem;
+  h2 {
+    letter-spacing: .05rem;
+    font-weight: 100;
+  }
+  p {
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    margin-top: .2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}
+
+.card-download {
+  width: 50%;
+  h2 {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-top: .3rem;
+  }
+}
+
