@@ -2,11 +2,10 @@ import React from "react";
 
 //Iconos
 import { FiSend } from "react-icons/fi";
-import { GiCoffeeCup } from "react-icons/gi";//no funciona
 import { FaFacebookSquare, FaInstagramSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 import logoheader from "../../assets/img/logo-completo.png";
 import logocompleto from "../../assets/img/logo-completo.png";
-
+import logoCafe from "../../assets/img/cafecito-logo.svg";
 
 //Style
 import "./Footer.scss";
@@ -15,22 +14,16 @@ const Footer = () => {
   return (
     <footer className="footer" id="fondoFooter">
       <div className="padre">
-        <div className="terminos-politicas">
-          <ul>
-            <li>
+        <div className="politicas-nosotros">
+          <div className="politicas">
               <picture className="logo">
                 <source media="(min-width: 768px)" srcSet={logoheader} />
                 <img src={logocompleto} alt="Logo Cresi" />
               </picture>
-            </li>
-            <li>
-              <p>Terminos y condiciones</p>
               <p>Politicas de privacidad</p>
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <div className="nosotros-links">
+          </div>
+          <hr />
+          <div className="nosotros-links">
           <div className="nosotros">
             <ul>
               <li>
@@ -67,40 +60,37 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        </div>
         <hr />
         <div className="suscripcion-donacion">
           <div className="suscripcion">
-            <ul>
-              <li>
-                <h1>SUSCRIBITE</h1>
-              </li>
-              <li>
-                <input type="text" placeholder="tumail@ejemplo.com"/>
-              </li>
-              <FiSend />
-            </ul>
+            <h1>SUSCRIBITE</h1>
+            <div className="divWrap">
+              <input type="text" placeholder="tumail@ejemplo.com"/>
+              <div className="logoSend"><FiSend /></div>
+            </div>
           </div>
           <div className="donacion">
-            <ul>
-              <li>
-                <h1>DONACIONES</h1>
-              </li>
-              <li>
-                <input type="text" name="" id=""/>
-              </li>
-              <GiCoffeeCup />
-            </ul>
+            <h1>DONACIONES</h1>
+            <div className="divWrapCafe">
+                <button><img src={logoCafe} alt=""/></button>
+                <input type="text" name="" id="" placeholder="Invitame un Cafecito (ARS $100)"/>
+            </div> 
           </div>
         </div>
         <hr />
         <div className="redes">
           <ul>
-            <li><FaFacebookSquare/></li>
-            <li><FaInstagramSquare/></li>
-            <li><FaTwitter/></li>
-            <li><FaLinkedin/></li>
-            <li><FaYoutube/></li>
+            <li><a href="www.google.com"><FaFacebookSquare size="2.5rem"/></a> </li>
+            <li><a href="www.google.com"><FaInstagramSquare size="2.5rem"/></a></li>
+            <li><a href="www.google.com"><FaTwitter size="2.5rem"/></a></li>
+            <li><a href="www.google.com"><FaLinkedin size="2.5rem"/></a></li>
+            <li><a href="www.google.com"><FaYoutube size="2.5rem"/></a></li>
           </ul>
+        </div>
+        <hr />
+        <div className="copyright">
+          <p>Copyright CrESI | Powered by  <a href="link">CrESI&reg;</a> </p>
         </div>
       </div>
 
