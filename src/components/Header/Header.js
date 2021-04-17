@@ -55,49 +55,28 @@ const Header = () => {
             </div>
             <ul>
               <li>
-                <NavLink
-                  onClick={handleNav}
-                  className="sidenav__link"
-                  to="/"
-                  exact
-                >
+                <NavLink onClick={handleNav} className="sidenav__link" to="/" exact>
                   Inicio
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  onClick={handleNav}
-                  className="sidenav__link"
-                  to="/recursos"
-                >
+                <NavLink onClick={handleNav} className="sidenav__link" to="/recursos">
                   Recursos
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  onClick={handleNav}
-                  className="sidenav__link"
-                  to="/visitas"
-                >
+                <NavLink onClick={handleNav} className="sidenav__link" to="/visitas">
                   Visitas a escuelas
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  onClick={handleNav}
-                  className="sidenav__link"
-                  to="/contacto"
-                >
+                <NavLink onClick={handleNav} className="sidenav__link" to="/contacto">
                   Contacto
                 </NavLink>
               </li>
               <hr />
               <li>
-                <NavLink
-                  onClick={handleNav}
-                  className="sidenav__link tienda"
-                  to="/tienda"
-                >
+                <NavLink onClick={handleNav} className="sidenav__link tienda" to="/tienda">
                   Tienda
                 </NavLink>
               </li>
@@ -112,7 +91,7 @@ const Header = () => {
           Tienda
         </NavLink>
         <NavLink className="cart" to="/carrito">
-          <MdShoppingCart size="2rem" />
+          <MdShoppingCart className="cart-icon" size="2rem" />
         </NavLink>
       </div>
     </header>

@@ -1,0 +1,15 @@
+.bubble-container {
+  position: relative;
+  overflow: hidden;
+  // border: solid 2px black; //El borde lo agregamos solo para verlos mientras estilamos, luego se quita
+
+  .content {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
