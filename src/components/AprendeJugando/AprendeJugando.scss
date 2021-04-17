@@ -3,39 +3,30 @@
 .aprende-jugando {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 1.5rem 0.5rem 1.5rem;
 
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
     }
 
     h2 {
+      color: colors.$gris-medio;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
     }
-
-    .play-online {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      background-color: colors.$verde;
-      height: 2rem;
-      width: 95%;
-      outline: none;
-      border: 0;
-      border-radius: 7px;
-      a {
-        color: colors.$blanco;
-        font-size: 16px;
-      }
-    }
-
     .jugando__stores {
       display: flex;
       justify-content: center;
       padding: 0 2rem;
+      margin-bottom: 1.5rem;
 
       img {
         width: 50%;
@@ -44,19 +35,124 @@
         }
       }
     }
-    .hero-switcher-mobile {
-      img {
-        //   width: 50%;
+
+    .play-online-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      background-color: colors.$verde;
+      height: 2rem;
+      width: 100%;
+      outline: none;
+      border: 0;
+      border-radius: 7px;
+      margin-bottom: 2rem;
+      a {
+        color: colors.$blanco;
+        font-size: 16px;
       }
+    }
+
+    //Hero para mobile
+    .hero-switcher-mobile {
+      margin-bottom: 1rem;
+
       @media (min-width: 768px) {
         display: none;
       }
     }
+    .jugando__info {
+      font-size: 1.25rem;
+    }
   }
+
+  //Hero a partir de tablet
   .wrapper2 {
     display: none;
     @media (min-width: 768px) {
       display: block;
+    }
+  }
+  ///TABLET////////////////
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    .wrapper {
+      flex: 0.55;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        order: 1;
+      }
+      h2 {
+        font-size: 2.5rem;
+        order: 2;
+      }
+      .jugando__info {
+        order: 3;
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+      .play-online-btn {
+        order: 4;
+        align-self: flex-start;
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+      .jugando__stores {
+        justify-content: flex-start;
+        order: 5;
+        width: 60%;
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .wrapper2 {
+      flex: 0.45;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  ///DESKTOP////////////////
+  @media (min-width: 1366px) {
+    padding: 2rem 8rem;
+    align-items: center;
+
+    .wrapper {
+      flex: 0.5;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        max-width: 70%;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        margin-bottom: 1rem;
+      }
+      .jugando__info {
+        max-width: 75%;
+      }
+      .play-online-btn {
+        max-width: 75%;
+      }
+      .jugando__stores {
+        width: 50%;
+      }
+    }
+    .wrapper2 {
+      flex: 0.5;
+
+      img {
+        width: auto;
+        min-height: 65vh;
+      }
     }
   }
 }

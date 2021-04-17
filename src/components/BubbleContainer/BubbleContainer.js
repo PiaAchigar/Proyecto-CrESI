@@ -8,7 +8,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 //Suma de alturas de burbujas
 import SumHeightOfBubbles from "./CalcHeight";
 
-const BubbleContainer = ({ children, content }) => {
+const BubbleContainer = ({ children, content, hidden }) => {
   //
 
   ///Altura inicial del bubble-container que va a ser la suma de la altura de todas sus burbujas
@@ -34,7 +34,11 @@ const BubbleContainer = ({ children, content }) => {
   }, [containerHeight, windowSize]);
 
   return (
-    <div className="bubble-container" ref={bubbleRef} style={{ height: `${containerHeight}px` }}>
+    <div
+      className="bubble-container"
+      ref={bubbleRef}
+      style={{ height: `${containerHeight}px`, overflowY: hidden && "hidden" }}
+    >
       <div className="content">{content}</div>
       {children}
     </div>

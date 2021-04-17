@@ -6,63 +6,64 @@
   animation: move 10s infinite ease-in-out;
   @-webkit-keyframes move {
     0% {
-      transform: scale(1) translate(5%, 5%);
+      transform: scale(1);
     }
     30% {
-      transform: scale(3) translate(20%, 50%);
+      transform: scale(2.2) translate(20%, 50%);
     }
     60% {
       transform: scale(0.7) translate(70%, 90%);
     }
     100% {
-      transform: scale(1) translate(5%, 5%);
+      transform: scale(1) translate(0%, 0%);
     }
   }
 
   @keyframes move {
     0% {
-      transform: scale(1) translate(5%, 5%);
+      transform: scale(1);
     }
     30% {
-      transform: scale(3) translate(20%, 50%);
+      transform: scale(2.2) translate(20%, 50%);
     }
     60% {
       transform: scale(0.7) translate(70%, 90%);
     }
     100% {
-      transform: scale(1) translate(5%, 5%);
+      transform: scale(1) translate(0%, 0%);
     }
   }
+
   @media (min-width: "768px") {
     transform: scale(1.2);
 
     @-webkit-keyframes move {
       0% {
-        transform: scale(1.2) translate(10%, 30%);
+        transform: scale(1.2);
       }
       30% {
-        transform: scale(3) translate(20%, 50%);
+        transform: scale(2.2) translate(20%, 50%);
       }
       60% {
         transform: scale(0.7) translate(70%, 90%);
       }
       100% {
-        transform: scale(1.2) translate(5%, 5%);
+        transform: scale(1.2) translate(0%, 0%);
       }
     }
 
     @keyframes move {
       0% {
-        transform: scale(1.2) translate(10%, 30%);
+        transform: scale(1.2);
       }
       30% {
-        transform: scale(3) translate(20%, 50%);
+        transform: scale(2.2) translate(20%, 50%);
       }
       60% {
         transform: scale(0.7) translate(70%, 90%);
       }
       100% {
-        transform: scale(1.2) translate(5%, 5%);
+        transform: scale(1.2) translate(0%, 0%);
       }
     }
   }
@@ -70,47 +71,47 @@
     transform: scale(1.4);
     @-webkit-keyframes move {
       0% {
-        transform: scale(1.4) translate(5%, 5%);
+        transform: scale(1.4);
       }
       30% {
-        transform: scale(3) translate(20%, 50%);
+        transform: scale(2.2) translate(20%, 50%);
       }
       60% {
         transform: scale(1.1) translate(70%, 90%);
       }
       100% {
-        transform: scale(1.4) translate(5%, 5%);
+        transform: scale(1.4) translate(0%, 0%);
       }
     }
     @keyframes move {
       0% {
-        transform: scale(1.4) translate(5%, 5%);
+        transform: scale(1.4);
       }
       30% {
-        transform: scale(3) translate(20%, 50%);
+        transform: scale(2.2) translate(20%, 50%);
       }
       60% {
         transform: scale(1.1) translate(70%, 90%);
       }
       100% {
-        transform: scale(1.4) translate(5%, 5%);
+        transform: scale(1.4) translate(0%, 0%);
       }
     }
   }
   @media (min-width: "1200px") {
-    transform: scale(3);
+    transform: scale(2);
     @-webkit-keyframes move {
       0% {
-        transform: scale(3) translate(5%, 5%);
+        transform: scale(2);
       }
       30% {
-        transform: scale(3) translate(20%, 50%);
+        transform: scale(2.4) translate(20%, 50%);
       }
       60% {
         transform: scale(1.1) translate(70%, 90%);
       }
       100% {
-        transform: scale(3) translate(5%, 5%);
+        transform: scale(2) translate(0%, 0%);
       }
     }
   }
