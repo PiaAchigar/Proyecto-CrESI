@@ -171,36 +171,54 @@
   
   // @media screen and (min-width: 768px) 
   @media (min-width: 768px){
-    .politicas-nosotros{
-      display: flex;
-      justify-content: space-evenly;
-      margin-left: 3rem;
-      width: 90%;
-      height: 150%;
-      .politicas{
-        padding-left: 0;
-        margin: 0;
-        p{
-          display: flex;
-          justify-content: center;
+    .padre{
+      .politicas-nosotros{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 3rem;
+        width: 90%;
+        height: 150%;
+        .politicas{
+          padding-left: 0;
+          margin: 0;
+          p{
+            display: flex;
+            justify-content: center;
+          }
+        }
+        hr{
+          display: none;
+          height: 0;
         }
       }
       hr{
-        display: none;
-        height: 0;
+        width: 95%;
+      }
+      .suscripcion-donacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .suscripcion{
+          display: flex;
+          width: 60%;
+        }
+        .donacion{
+          display: flex;
+          width: 60%;
+        }
       }
     }
-    .suscripcion-donacion{
+    .redes-copy{
       display: flex;
-      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      hr{
+        display: none;
+        width: 0;
+      }
       
-      .suscripcion{
-        display: flex;
-      }
-      .donacion{
-        display: flex;
-      }
     }
+    
   }
 }
   
