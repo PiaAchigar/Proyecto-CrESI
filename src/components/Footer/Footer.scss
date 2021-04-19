@@ -19,7 +19,10 @@
     color: colors.$gris-oscuro;
     font-size: .9rem;
     .politicas-nosotros{
+      display: flex;
       width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
       .politicas{
           display: flex;
           justify-content: center;
@@ -38,6 +41,7 @@
       .nosotros-links{
         display: flex;
         justify-content: center;
+        width: 80%;
         padding: .5rem;
         margin-left: .7rem;
         //width: 100%;
@@ -144,7 +148,6 @@
           justify-content: space-evenly;
           width: 100%; 
           li a{
-              //pointer-events: none;
               color:colors.$gris-oscuro;
             }
         }
@@ -173,6 +176,10 @@
       color:colors.$rojo;
       font-size: 1rem;
     }
+    .separador{
+      display: none;
+      width: 0;
+    }
 
   }
   
@@ -196,7 +203,21 @@
           display: none;
           height: 0;
         }
+      .nosotros-links{
+        display: flex;
+        width: 55%;
+        justify-content: space-evenly;
+        .nosotros{
+          display: flex;
+          justify-content: center;
+        }
+        .links{
+          display: flex;
+          justify-content: center;
+          margin:0;
+        }
       }
+    }
       hr{
         width: 95%;
       }
@@ -207,38 +228,64 @@
         .suscripcion{
           display: flex;
           width: 60%;
+          h1{
+            justify-content: left;
+          }
         }
         .donacion{
           display: flex;
           width: 60%;
+          h1{
+            justify-content: left;
+          }
         }
+       
+        
       }
     }
     .redes-copy{
       display: flex;
+      flex-direction: row-reverse;
       justify-content: space-evenly;
       width: 100%;
       hr{
         display: none;
         width: 0;
       }
-
+      .separador{
+        display: flex;
+        align-items: center;
+      }
     }
     
   }
-  @media screen and (min-width: 1024px){// (1366?)
-    .padre{
+  @media screen and (min-width: 1200px){
+      .padre{
       display: flex;
-      
       .politicas-nosotros{
         display: flex;
         justify-content: space-evenly;
         width: 60%;
-        //height: 150%;
-        margin: 0;
+        margin-left: 75px;
         .politicas{
           display: flex;
-          flex-direction: column;
+
+        }
+        .nosotros-links{
+          display: flex;
+          justify-content: right;
+          width: 55%;
+          .nosotros{
+            ul li{ 
+              padding: .5rem;
+
+            }
+          }
+          .links{
+            ul li{
+              padding: .5rem;
+            }
+          }
         }
       }
       hr{
@@ -248,21 +295,28 @@
       .suscripcion-donacion{
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 30%;
+        padding-right: 80px;
         .suscripcion{
           width: 100%;
+          h1{
+            justify-content: left;
+          }
         }
         .donacion{
           width: 100%;
+          h1{
+            justify-content: left;
+          }
         }
       }
       .linea{
         display: flex;
         width: 95%;
       }
+      }
     }
-
-  }
+  
 
 }
   

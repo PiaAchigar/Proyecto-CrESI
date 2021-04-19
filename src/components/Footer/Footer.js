@@ -84,13 +84,14 @@ const Footer = () => {
         <div className="redes-copy">
           <div className="redes">
             <ul>
-              <li><a href="www.google.com"><FaFacebookSquare size="2.5rem"/></a> </li>
-              <li><a href="www.google.com"><FaInstagramSquare size="2.5rem"/></a></li>
-              <li><a href="www.google.com"><FaTwitter size="2.5rem"/></a></li>
-              <li><a href="www.google.com"><FaLinkedin size="2.5rem"/></a></li>
-              <li><a href="www.google.com"><FaYoutube size="2.5rem"/></a></li>
+              <li><a href="www.google.com"><FaFacebookSquare size="2rem"/></a> </li>
+              <li><a href="www.google.com"><FaInstagramSquare size="2rem"/></a></li>
+              <li><a href="www.google.com"><FaTwitter size="2rem"/></a></li>
+              <li><a href="www.google.com"><FaLinkedin size="2rem"/></a></li>
+              <li><a href="www.google.com"><FaYoutube size="2rem"/></a></li>
             </ul>
           </div>
+          <div className="separador">|</div>
           <hr />
           <div className="copyright">
             <p>Copyright CrESI | Powered by  <a href="link">CrESI&reg;</a> </p>
