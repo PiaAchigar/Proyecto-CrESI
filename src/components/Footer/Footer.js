@@ -24,42 +24,42 @@ const Footer = () => {
           </div>
           <hr />
           <div className="nosotros-links">
-          <div className="nosotros">
-            <ul>
-              <li>
-                <h1>NOSOTROS</h1>
-              </li>
-              <li>
-                ¿Quiénes somos?
-              </li>
-              <li>
-                Premios
-              </li>
-              <li>
-                Prensa
-              </li>
-              <li>
-                Testimonios
-              </li>
-            </ul>
+            <div className="nosotros">
+              <ul>
+                <li>
+                  <h1>NOSOTROS</h1>
+                </li>
+                <li>
+                  ¿Quiénes somos?
+                </li>
+                <li>
+                  Premios
+                </li>
+                <li>
+                  Prensa
+                </li>
+                <li>
+                  Testimonios
+                </li>
+              </ul>
+            </div>
+            <div className="links">
+              <ul>
+                <li>
+                  <h1>LINKS ÚTILES</h1>
+                </li>
+                <li>
+                  Juego online
+                </li>
+                <li>
+                  Tienda
+                </li>
+                <li>
+                  Contacto
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="links">
-            <ul>
-              <li>
-                <h1>LINKS ÚTILES</h1>
-              </li>
-              <li>
-                Juego online
-              </li>
-              <li>
-                Tienda
-              </li>
-              <li>
-                Contacto
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
         <hr />
         <div className="suscripcion-donacion">
@@ -77,8 +77,10 @@ const Footer = () => {
                 <input type="text" name="" id="" placeholder="Invitame un Cafecito (ARS $100)"/>
             </div> 
           </div>
+          
         </div>
         <hr />
+        <hr className="linea"/>
         <div className="redes-copy">
           <div className="redes">
             <ul>

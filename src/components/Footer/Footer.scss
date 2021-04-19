@@ -134,27 +134,34 @@
         }
       }
     }
-    .redes{
-      padding: .5rem;
+    .redes-copy{
       width: 100%;
-      ul {
-        display:flex;
-        justify-content: space-evenly;
-        width: 100%; 
-        li a{
-            //pointer-events: none;
-            color:colors.$gris-oscuro;
-          }
+      .redes{
+        padding: .5rem;
+        width: 100%;
+        ul {
+          display:flex;
+          justify-content: space-evenly;
+          width: 100%; 
+          li a{
+              //pointer-events: none;
+              color:colors.$gris-oscuro;
+            }
+        }
+      }
+      .copyright{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        a{
+          color: colors.$cafecito;
+        }
       }
     }
-    .copyright{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding: 1rem;
-      a{
-        color: colors.$cafecito;
-      }
+    .linea{
+      display: none;
+      width: 0;
     }
     hr{
       height: 0;
@@ -169,8 +176,7 @@
 
   }
   
-  // @media screen and (min-width: 768px) 
-  @media (min-width: 768px){
+  @media screen and (min-width: 768px) {
     .padre{
       .politicas-nosotros{
         display: flex;
@@ -216,10 +222,48 @@
         display: none;
         width: 0;
       }
-      
+
     }
     
   }
+  @media screen and (min-width: 1024px){// (1366?)
+    .padre{
+      display: flex;
+      
+      .politicas-nosotros{
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        //height: 150%;
+        margin: 0;
+        .politicas{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      hr{
+          display: none;
+          width: 0;
+        }
+      .suscripcion-donacion{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        .suscripcion{
+          width: 100%;
+        }
+        .donacion{
+          width: 100%;
+        }
+      }
+      .linea{
+        display: flex;
+        width: 95%;
+      }
+    }
+
+  }
+
 }
   
     
