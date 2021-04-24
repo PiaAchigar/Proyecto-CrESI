@@ -1,0 +1,78 @@
+@use "../../sass/colors";
+
+.card-premio {
+  min-width: 160px;
+  max-width: 160px;
+  min-height: 240px;
+  max-height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-right: 2rem; //PROPIEDAD QUE SIMULA UN COLUMN-GAP ENTRE TODAS LAS CARD
+  //PROPIEDAD SCROLL
+  scroll-snap-align: center;
+
+  @media (min-width: 1550px) {
+    min-width: 12vw;
+    max-width: 12vw;
+    min-height: 15vw;
+    max-height: 15vw;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    background-color: white;
+    padding: 0.25rem;
+
+    img {
+      max-height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  .card-botomm {
+    height: 40%;
+    background-color: #4887df;
+    padding: 0.75rem 0.2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), #4887df);
+      height: 10px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .p-top {
+      font-size: 0.75rem;
+      color: white;
+      text-align: center;
+      min-height: 60%;
+      max-height: 60%;
+      @media (min-width: 1550px) {
+        font-size: 0.85rem;
+      }
+    }
+    .p-botomm {
+      @extend .p-top;
+      font-size: 1rem;
+      min-height: 40%;
+      max-height: 40%;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: white;
+      margin: 0.5rem auto;
+      width: 80%;
+    }
+  }
+}
