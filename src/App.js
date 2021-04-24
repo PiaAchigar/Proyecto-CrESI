@@ -14,6 +14,7 @@ import Carrito from "./pages/Carrito";
 //Estos dos componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 
 //Ruteador
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -34,7 +35,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Switch>
         <Route path="/" exact component={Inicio} />
         <Route path="/recursos" component={Recursos} />
@@ -43,7 +43,7 @@ function App() {
         <Route path="/tienda" component={Tienda} />
         <Route path="/carrito" component={Carrito} />
       </Switch>
-
+      <WhatsappFloat />
       <Footer />
     </div>
   );

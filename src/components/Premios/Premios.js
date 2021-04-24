@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 //images
 import imgPrincipal from "../../assets/img/premios-bg.jpg";
@@ -15,22 +15,22 @@ import CardPremios from "../CardPremios/CardPremios";
 import "./Premios.scss";
 
 const Premios = () => {
-  //CARD QUE VA A ESTAR SIEMPRE AL MEDIO EN MOBILE, EN ESTA CASO LA 3ra, SON 7 CARDS
-  //SOLO SIRVE HASTA 768px PERO SIRVE :D
-  const slider = useRef();
-  useEffect(() => {
-    const CardNumber3 = slider.current.children[3];
-    CardNumber3.scrollIntoView();
-  }, []);
+  // //CARD QUE VA A ESTAR SIEMPRE AL MEDIO EN MOBILE, EN ESTA CASO LA 3ra, SON 7 CARDS
+  // //SOLO SIRVE HASTA 768px PERO SIRVE :D
+  // const slider = useRef();
+  // useEffect(() => {
+  //   const CardNumber3 = slider.current.children[3];
+  //   CardNumber3.scrollIntoView();
+  // }, []);
   //////////////////////////////////////////////////////////////////////////////////
 
   return (
     <div className="premios">
       <h1>Premios</h1>
 
-      <img src={imgPrincipal} alt="" />
+      <img src={imgPrincipal} alt="Equipo Cresi con bandera argentina" />
       <div className="slider-container">
-        <div ref={slider} className="premios-slider">
+        <div className="premios-slider">
           <CardPremios
             img={chicos}
             alt={"Premio Asociacion chicos.net"}
