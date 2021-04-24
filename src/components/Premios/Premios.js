@@ -27,6 +27,7 @@ const Premios = () => {
   return (
     <div className="premios">
       <h1>Premios</h1>
+
       <img src={imgPrincipal} alt="" />
       <div className="slider-container">
         <div ref={slider} className="premios-slider">

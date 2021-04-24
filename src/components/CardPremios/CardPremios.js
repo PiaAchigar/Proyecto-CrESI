@@ -3,7 +3,7 @@ import React from "react";
 //Style
 import "./CardPremios.scss";
 
-const CardPremios = ({ img, alt, texto, premio }, ref) => {
+const CardPremios = ({ img, alt, texto, premio }) => {
   return (
     <div className="card-premio">
       <div className="card-top">

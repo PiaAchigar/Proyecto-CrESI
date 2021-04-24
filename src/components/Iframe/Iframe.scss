@@ -1,0 +1,30 @@
+.iframe-container {
+  scroll-snap-align: center;
+  min-width: 225px;
+  max-width: 225px;
+  min-height: 125px;
+  max-height: 125px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  &:nth-child(2) {
+    margin: 0 1rem;
+  }
+  @media (min-width: 768px) {
+    &:nth-child(2) {
+      margin: 0 2rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+  }
+}

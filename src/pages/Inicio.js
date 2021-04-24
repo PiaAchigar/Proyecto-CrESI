@@ -6,6 +6,7 @@ import BubbleContainer from "../components/BubbleContainer/BubbleContainer";
 import AprendeJugando from "../components/AprendeJugando/AprendeJugando";
 import QuienesSomos from "../components/QuienesSomos/QuienesSomos.js";
 import Premios from "../components/Premios/Premios";
+import QueDicen from "../components/QueDicen/QueDicen";
 
 const Inicio = () => {
   return (
@@ -21,6 +22,7 @@ const Inicio = () => {
       <BubbleContainer content={<Premios />}>
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
+      <QueDicen />
     </div>
   );
 };
