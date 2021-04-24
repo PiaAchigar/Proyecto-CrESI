@@ -23,6 +23,10 @@ const Inicio = () => {
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
       <QueDicen />
+      {/* <AprendeJugando />
+      <QuienesSomos />
+      <Premios />
+      <QueDicen /> */}
     </div>
   );
 };

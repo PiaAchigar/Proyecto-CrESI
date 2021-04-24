@@ -1,0 +1,36 @@
+@use "../../sass/colors";
+.whatsapp-float {
+  background-color: colors.$whatsapp;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s transform ease-in-out;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+  &:active {
+    border: solid 2px white;
+    box-shadow: 0 0 2px 2px colors.$whatsapp;
+  }
+  .icon-wsp {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+    .icon-wsp {
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -7,11 +7,12 @@
   max-height: 240px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   margin-right: 2rem; //PROPIEDAD QUE SIMULA UN COLUMN-GAP ENTRE TODAS LAS CARD
   //PROPIEDAD SCROLL
   scroll-snap-align: center;
+  transition: 0.4s ease-in-out;
 
   @media (min-width: 1550px) {
     min-width: 12vw;
