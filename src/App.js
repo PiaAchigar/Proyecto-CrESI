@@ -23,14 +23,15 @@ function App() {
   const location = useLocation();
 
   // Para que automaticamente se haga scroll al top de la pagina a la que se va.
-  useEffect(() => {
-    setTimeout(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-      });
-    }, 500);
-  }, [location]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     window.scroll({
+  //       top: 0,
+  //       left: 0,
+  //     });
+  //     console.log("subiendo");
+  //   }, 500);
+  // }, [location]);
 
   return (
     <div className="App">

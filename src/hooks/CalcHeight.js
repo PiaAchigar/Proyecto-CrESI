@@ -1,3 +1,5 @@
+//ACTUALMENTE NO ESTA EN USO
+
 //Esta funcion devuelve la suma total de las alturas de las burbujas ingresada en un BubbleContainer
 
 const SumHeightOfBubbles = (children) => {

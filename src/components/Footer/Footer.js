@@ -1,8 +1,16 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 //Iconos
 import { FiSend } from "react-icons/fi";
-import { FaFacebookSquare, FaInstagramSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import logoheader from "../../assets/img/logo-completo.png";
 import logocompleto from "../../assets/img/logo-completo.png";
 import logoCafe from "../../assets/img/cafecito-logo.svg";
@@ -16,11 +24,11 @@ const Footer = () => {
       <div className="padre">
         <div className="politicas-nosotros">
           <div className="politicas">
-              <picture className="logo">
-                <source media="(min-width: 768px)" srcSet={logoheader} />
-                <img src={logocompleto} alt="Logo Cresi" />
-              </picture>
-              <p>Politicas de privacidad</p>
+            <picture className="logo">
+              <source media="(min-width: 768px)" srcSet={logoheader} />
+              <img src={logocompleto} alt="Logo Cresi" />
+            </picture>
+            <p>Politicas de privacidad</p>
           </div>
           <hr />
           <div className="nosotros-links">
@@ -30,16 +38,16 @@ const Footer = () => {
                   <h1>NOSOTROS</h1>
                 </li>
                 <li>
-                  ¿Quiénes somos?
+                  <a href="/#quienes-somos">¿Quiénes somos?</a>
                 </li>
                 <li>
-                  Premios
+                  <a href="/#premios">Premios</a>
                 </li>
                 <li>
-                  Prensa
+                  <a href="/#prensa-testimonios">Prensa</a>
                 </li>
                 <li>
-                  Testimonios
+                  <a href="/#prensa-testimonios">Testimonios</a>
                 </li>
               </ul>
             </div>
@@ -49,13 +57,13 @@ const Footer = () => {
                   <h1>LINKS ÚTILES</h1>
                 </li>
                 <li>
-                  Juego online
+                  <Link to="/">Juego online</Link>
                 </li>
                 <li>
-                  Tienda
+                  <Link to="/tienda">Tienda</Link>
                 </li>
                 <li>
-                  Contacto
+                  <Link to="/contacto">Contacto</Link>
                 </li>
               </ul>
             </div>
@@ -66,39 +74,63 @@ const Footer = () => {
           <div className="suscripcion">
             <h1>SUSCRIBITE</h1>
             <div className="divWrap">
-              <input type="text" placeholder="tumail@ejemplo.com"/>
-              <div className="logoSend"><FiSend /></div>
+              <input type="text" placeholder="tumail@ejemplo.com" />
+              <div className="logoSend">
+                <FiSend />
+              </div>
             </div>
           </div>
           <div className="donacion">
             <h1>DONACIONES</h1>
             <div className="divWrapCafe">
-                <button><img src={logoCafe} alt=""/></button>
-                <input type="text" name="" id="" placeholder="Invitame un Cafecito (ARS $100)"/>
-            </div> 
+              <button>
+                <img src={logoCafe} alt="" />
+              </button>
+              <input type="text" name="" id="" placeholder="Invitame un Cafecito (ARS $100)" />
+            </div>
           </div>
-          
         </div>
         <hr />
-        <hr className="linea"/>
+        <hr className="linea" />
         <div className="redes-copy">
           <div className="redes">
             <ul>
-              <li><a href="www.google.com"><FaFacebookSquare size="2rem"/></a> </li>
-              <li><a href="www.google.com"><FaInstagramSquare size="2rem"/></a></li>
-              <li><a href="www.google.com"><FaTwitter size="2rem"/></a></li>
-              <li><a href="www.google.com"><FaLinkedin size="2rem"/></a></li>
-              <li><a href="www.google.com"><FaYoutube size="2rem"/></a></li>
+              <li>
+                <a href="www.google.com">
+                  <FaFacebookSquare size="2rem" />
+                </a>{" "}
+              </li>
+              <li>
+                <a href="www.google.com">
+                  <FaInstagramSquare size="2rem" />
+                </a>
+              </li>
+              <li>
+                <a href="www.google.com">
+                  <FaTwitter size="2rem" />
+                </a>
+              </li>
+              <li>
+                <a href="www.google.com">
+                  <FaLinkedin size="2rem" />
+                </a>
+              </li>
+              <li>
+                <a href="www.google.com">
+                  <FaYoutube size="2rem" />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="separador">|</div>
           <hr />
           <div className="copyright">
-            <p>Copyright CrESI | Powered by  <a href="link">CrESI&reg;</a> </p>
+            <p>
+              Copyright CrESI | Powered by <a href="link">CrESI&reg;</a>{" "}
+            </p>
           </div>
         </div>
       </div>
-
     </footer>
   );
 };

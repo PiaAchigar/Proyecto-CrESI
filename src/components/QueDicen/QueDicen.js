@@ -13,7 +13,7 @@ import "./QueDicen.scss";
 
 const QueDicen = () => {
   return (
-    <div className="que-dicen">
+    <div className="que-dicen" id="prensa-testimonios">
       <h1>¿Qué dicen de nosotros?</h1>
       <div className="slider-container1">
         <div className="slider">

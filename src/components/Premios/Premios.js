@@ -25,7 +25,7 @@ const Premios = () => {
   //////////////////////////////////////////////////////////////////////////////////
 
   return (
-    <div className="premios">
+    <div className="premios" id="premios">
       <h1>Premios</h1>
 
       <img src={imgPrincipal} alt="Equipo Cresi con bandera argentina" />

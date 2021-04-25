@@ -8,7 +8,7 @@ import "./QuienesSomos.scss";
 
 const QuienesSomos = () => {
   return (
-    <div className="quienes-porque-container">
+    <div className="quienes-porque-container" id="quienes-somos">
       <section className="quienes-somos">
         <h1>¿Quiénes somos?</h1>
         <article className="article">
