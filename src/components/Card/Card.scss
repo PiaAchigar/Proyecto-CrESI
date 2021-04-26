@@ -2,11 +2,9 @@
 .container2 {
   display: none;
 }
-
 .iconos {
   width: 3rem;
 }
-
 .container1 {
   margin: 2rem;
   max-width: 350px;
@@ -24,7 +22,6 @@
     flex-direction: row;
     align-items: center;
   }
-
   .card-objetivo {
     background-color: colors.$amarillo;
     border-radius: 5%;
@@ -45,7 +42,6 @@
       margin-right: .5rem;
     }
   }
-  
   .card-download {
     width: 50%;
     h2 {
@@ -60,19 +56,14 @@
       display: none;
     }
   }
-  
 }
-
-
 @media only screen and (min-width:768px) {
   .iconos {
     width: 4rem;
   }
-
   .container1 {
     display: none;
   }
-  
   .container2 {
     margin: 2rem;
     max-width: 700px;
@@ -96,7 +87,6 @@
       flex-direction: row;
       align-items: center;
     }
-  
     .card-objetivo {
       align-self: flex-start;
       display: flex;
@@ -125,7 +115,6 @@
         margin-right: .5rem;
       }
     }
-    
     .card-download {
       margin-right: 1rem;
       display: flex;
@@ -153,31 +142,24 @@
         order: 3;
       }
     }
-
     .textos {
       padding: .7rem;
       p {
         text-align: start;
-        
       }
       .items {
         padding-left: 1rem;
       }
-      
     }
-    
   }
 }
-
 @media only screen and (min-width:1366px) {
   .iconos {
     width: 4rem;
   }
-
   .container1 {
     display: none;
   }
-  
   .container2 {
     margin: 2rem;
     min-width: 1180px;
@@ -202,7 +184,6 @@
       flex-direction: row;
       align-items: center;
     }
-  
     .card-objetivo {
       align-self: flex-start;
       display: flex;
@@ -232,7 +213,6 @@
         margin-right: .5rem;
       }
     }
-    
     .card-download {
       margin-right: 1rem;
       display: flex;
@@ -261,7 +241,6 @@
         order: 3;
       }
     }
-
     .textos {
       display: flex;
       flex-direction: column;
@@ -282,10 +261,6 @@
          padding: 0rem;
         }   
       }
-      
-      
     }
-    
   }
 }
-

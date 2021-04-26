@@ -2,10 +2,7 @@ import React from "react";
 import RecursosComponente from "../components/Recursos/RecursosComponente"
 import Bubble from "../components/BubbleContainer/Bubble"
 import BubbleContainer from "../components/BubbleContainer/BubbleContainer"
-
-
 const Recursos = () => {
-
   return (
     <div className="page-wrapper">
       <BubbleContainer content={<RecursosComponente />}>
@@ -16,5 +13,4 @@ const Recursos = () => {
     </div>
   );
 }
-
 export default Recursos;

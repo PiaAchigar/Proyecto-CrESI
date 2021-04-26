@@ -1,0 +1,86 @@
+@use "../../sass/colors";
+
+.card-articulo {
+  min-width: 225px;
+  max-width: 225px;
+  min-height: 250px;
+  max-height: 250px;
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+  scroll-snap-align: center;
+
+  &:nth-child(2) {
+    margin: 0 1rem;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding: 1rem;
+
+    img {
+      max-height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  .card-botomm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 0.5rem 0.5rem;
+    height: 50%;
+    &::before {
+      content: "";
+      background: linear-gradient(
+        rgba(59, 59, 59, 0.2) 0%,
+        rgba(124, 124, 124, 0.1) 49%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #303030;
+      @media (min-width: 1200px) {
+        font-size: 1.25rem;
+      }
+    }
+    .btn-articulo {
+      align-self: flex-end;
+      background-color: colors.$verde;
+      border-radius: 10px;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      width: 30%;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+      will-change: transform;
+      cursor: pointer;
+
+      &:hover {
+        background-image: linear-gradient(60deg, colors.$violeta, colors.$verde 60%);
+        transform: scale(1.05);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &:nth-child(2) {
+      margin: 0 2rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+}

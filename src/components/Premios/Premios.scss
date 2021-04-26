@@ -1,0 +1,76 @@
+@use "../../sass/colors";
+
+.premios {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2.5rem;
+    color: colors.$gris-medio;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  img {
+    width: 95%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 85%;
+    }
+    @media (min-width: 1200px) {
+      width: 75%;
+    }
+  }
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-105px);
+
+    @media (min-width: 768px) {
+      transform: translateY(-155px);
+    }
+    @media (min-width: 1024px) {
+      transform: translateY(-205px);
+    }
+    @media (min-width: 1200px) {
+      transform: translateY(-215px);
+    }
+
+    .premios-slider {
+      display: flex;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 1rem 0;
+      position: relative;
+      transition: 0.5s ease-in-out;
+
+      //PROPIEDADES DE SCROLL
+      overflow-x: scroll;
+      -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scroll-snap-align: center;
+      scrollbar-width: none; //Scroll bar no visible para FireFox
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      //A LA PRIMERA CARD DEL SLIDER TMB LE DAMOS MARGIN PERO DE LA IZQUIERDA
+      @media (min-width: 1024px) {
+        & > :first-child {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

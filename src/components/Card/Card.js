@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "../Card/Card.scss"
 import logoCompleto from "../../assets/img/logo-completo.png"

@@ -15,16 +15,17 @@ const AprendeJugando = () => {
     <div className="aprende-jugando">
       <div className="wrapper">
         <h1>Aprende jugando</h1>
-        <h2>!Descargate la app!</h2>
-        <div className="play-online">
+        <h2>¡Descargate la app!</h2>
+        <div className="jugando__stores">
+          <img src={appStore} alt="apple store" />
+          <img src={googlePlay} alt="play store" />
+        </div>
+        <div className="play-online-btn">
           <a href="https://www.google.com/" target="_blank" rel="noreferrer">
-            !Jugar Online!
+            ¡Jugar Online!
           </a>
         </div>
-        <div className="jugando__stores">
-          <img src={appStore} alt="Boton para redigirse al apple store y descargar la app" />
-          <img src={googlePlay} alt="Boton para redirigirse a play store y descargar la app" />
-        </div>
+
         <div className="hero-switcher-mobile">
           <HeroSwitcher />
         </div>
