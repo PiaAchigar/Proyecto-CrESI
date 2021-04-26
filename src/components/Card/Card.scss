@@ -1,15 +1,17 @@
 @use "../../sass/colors";
-
+.container2 {
+  display: none;
+}
 
 .iconos {
   width: 3rem;
 }
 
-.container {
+.container1 {
   margin: 2rem;
   max-width: 350px;
   color: #707070;
-  border-radius: 2%;
+  border-radius: 5px;
   box-shadow: 0px 3px 6px 1px colors.$shadow;
   text-align: center;
   h1 {
@@ -17,40 +19,273 @@
     font-size: 1.5rem;
     color: colors.$negro;
   }
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.card-objetivo {
-  background-color: colors.$amarillo;
-  border-radius: 5%;
-  font-size: .6rem;
-  width: 50%;
-  text-align: center;
-  margin: 1rem;
-  h2 {
-    letter-spacing: .05rem;
-    font-weight: 100;
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  p {
-    font-weight: 600;
-    margin-bottom: 1.2rem;
-    margin-top: .2rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+
+  .card-objetivo {
+    background-color: colors.$amarillo;
+    border-radius: 5%;
+    font-size: .6rem;
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+    h2 {
+      letter-spacing: .05rem;
+      font-weight: 100;
+    }
+    p {
+      color: colors.$negro;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      margin-top: .2rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+  }
+  
+  .card-download {
+    width: 50%;
+    h2 {
+      font-size: 1rem;
+      font-weight: 550;
+      margin-top: .3rem;
+    }
+    .download {
+      color: colors.$verde;
+    }
+    .linea {
+      display: none;
+    }
+  }
+  
+}
+
+
+@media only screen and (min-width:768px) {
+  .iconos {
+    width: 4rem;
+  }
+
+  .container1 {
+    display: none;
+  }
+  
+  .container2 {
+    margin: 2rem;
+    max-width: 700px;
+    color: #707070;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 1px colors.$shadow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    h1 {
+      margin-left: 1px;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: start;
+      font-size: 1.5rem;
+      color: colors.$negro;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .card-objetivo {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: colors.$amarillo;
+      border-radius: 6px;
+      font-size: .8rem;
+      width: 45%;
+      height: 11.5rem;
+      text-align: center;
+      margin: 1rem;
+      margin-bottom: 5rem;
+      h2 {
+        letter-spacing: .05rem;
+        font-weight: 100;
+      }
+      p {
+        color: colors.$negro;
+        font-weight: 600;
+        font-size: .6rem;
+        margin-bottom: 1.2rem;
+        margin-top: .2rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
+    }
+    
+    .card-download {
+      margin-right: 1rem;
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      border-radius: 10px;
+      background-color: colors.$verde;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      padding: .2rem;
+      h2 {
+        color: colors.$blanco;
+        order: 1;
+        font-size: 1.1rem;
+        font-weight: 550;
+      }
+      .linea {
+        display: block;
+        order: 2;
+      }
+      .download {
+        color: colors.$blanco;
+        order: 3;
+      }
+    }
+
+    .textos {
+      padding: .7rem;
+      p {
+        text-align: start;
+        
+      }
+      .items {
+        padding-left: 1rem;
+      }
+      
+    }
+    
   }
 }
 
-.card-download {
-  width: 50%;
-  h2 {
-    font-size: 1rem;
-    font-weight: 550;
-    margin-top: .3rem;
+@media only screen and (min-width:1366px) {
+  .iconos {
+    width: 4rem;
+  }
+
+  .container1 {
+    display: none;
+  }
+  
+  .container2 {
+    margin: 2rem;
+    min-width: 1180px;
+    max-width: 700px;
+    color: #707070;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 1px colors.$shadow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    h1 {
+      margin-left: 1px;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: start;
+      font-size: 1.5rem;
+      color: colors.$negro;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .card-objetivo {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: colors.$amarillo;
+      border-radius: 6px;
+      font-size: .8rem;
+      width: 45%;
+      max-width: 200px;
+      height: 11.5rem;
+      text-align: center;
+      margin: 1rem;
+      margin-bottom: 5rem;
+      h2 {
+        letter-spacing: .05rem;
+        font-weight: 100;
+      }
+      p {
+        color: colors.$negro;
+        font-weight: 600;
+        font-size: .6rem;
+        margin-bottom: 1.2rem;
+        margin-top: .2rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
+    }
+    
+    .card-download {
+      margin-right: 1rem;
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+      width: 30%;
+      border-radius: 10px;
+      background-color: colors.$verde;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      padding: .5rem;
+      align-self: flex-end;
+      h2 {
+        color: colors.$blanco;
+        order: 1;
+        font-size: 1.1rem;
+        font-weight: 550;
+      }
+      .linea {
+        display: block;
+        order: 2;
+      }
+      .download {
+        color: colors.$blanco;
+        order: 3;
+      }
+    }
+
+    .textos {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+      width: 80%;
+      padding: .7rem;
+      text-align: end;
+      h1 {
+        text-align: start;
+        font-size: 2rem;
+      }
+      p {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        text-align: start;
+        font-size: 1rem;   
+        .items {
+         padding: 0rem;
+        }   
+      }
+      
+      
+    }
+    
   }
 }
 
