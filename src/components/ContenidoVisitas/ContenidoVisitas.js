@@ -46,24 +46,26 @@ const ContenidoVisitas = () => {
                         <li>Universidad Nacional de José C. Paz (UNPAZ)</li>
                         <li>Universidad de Palermo, CABA</li>
                         <li>Escuela Secundaria N°4 de Del Viso</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Colegio Santa Soledad Torres Acosta de Grand Bourd</li>
+                        <li>Escuela Técnica N°3 de Del Viso</li>
+                        <li>Escuela Secundaria N°4, Zarate</li>
+                        <li>Escuela de Educación Técnica N°1, Escobar</li>
+                        <li>Instituto Secundario de Rauch</li>
+                        <li>Escuela Agropecuaria, Rauch</li>
+                        <li>CEPT N°5, Rauch</li>
+                        <li>Escuela Secundaria N°2, Rauch</li>
+                        <li>Escuela Secundaria N°3, Rauch</li>
+                        <li>Escuela de Educación Técnica N°1, Rauch</li>
+                        <li>Instituto Inmaculada Concepción, Rauch</li>
+                        <li>Escuela Secundaria N°2 en Los Cardales</li>
+                        <li>Instituto Santa Rosa de Villa Rosa, Pilar</li>
+                        <li>Escuela Secundaria N°26, Campana</li>
+                        <li>Escuela Técnica N°2 de Derqui</li>
                     </ul>
                 </article>
-                <div className="visita-img"><img src={visitas_ilustracion} alt="visitas_ilustracion" className="visita-img"/></div>
+                <div className="visita-img">
+                    <img src={visitas_ilustracion} alt="visitas_ilustracion"/>
+                </div>
             </section>
         </div>
     );
