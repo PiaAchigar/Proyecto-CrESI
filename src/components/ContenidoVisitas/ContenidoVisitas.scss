@@ -1,0 +1,7 @@
+@use "../../sass/colors";
+h1 {
+    font-size: 2.5rem;
+    color: colors.$gris-medio;
+    text-align: center;
+    margin-bottom: 1rem;
+  }

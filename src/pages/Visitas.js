@@ -1,9 +1,10 @@
 import React from "react";
+import ContenidoVisitas from "../components/ContenidoVisitas/ContenidoVisitas";
 
 const Visitas = () => {
   return (
     <div className="page-wrapper">
-      <h1>Pagina de Visitas</h1>
+      <ContenidoVisitas/>
     </div>
   );
 };
