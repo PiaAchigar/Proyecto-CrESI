@@ -11,7 +11,7 @@ import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
 
 //Componentes
-//Estos dos componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
+//Estos tres componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
@@ -24,13 +24,7 @@ function App() {
 
   // Para que automaticamente se haga scroll al top de la pagina a la que se va.
   // useEffect(() => {
-  //   setTimeout(() => {
-  //     window.scroll({
-  //       top: 0,
-  //       left: 0,
-  //     });
-  //     console.log("subiendo");
-  //   }, 500);
+  //   setTimeout(() => { window.scroll({top: 0,left: 0,}); console.log("subiendo");}, 500);  
   // }, [location]);
 
   return (
