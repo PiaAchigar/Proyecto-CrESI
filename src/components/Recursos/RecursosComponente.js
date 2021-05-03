@@ -1,10 +1,12 @@
 import React from 'react';
+//CSS
 import '../Recursos/Recursos.scss';
+//Componentes
 import Card from "../../components/Card/Card";
+import Mailto from "../../components/Mailto";
+//Imagenes
 import recursosDidacticos from "../../assets/img/recursos-didacticos.jpg";
 import recursosIlustracion from "../../assets/img/recursos-ilustracion.png";
-import { Link } from 'react-router-dom';
-
 
 
 const objetivo1 = {
@@ -30,11 +32,6 @@ const objetivo4 = {
 }
 
 const RecursosComponente = () => {
-
-  const Mailto = ({ subject = '', body = '', children }) => {
-    let params = subject || body ? '?' : '';
-    return <a href={`mailto:${'appcresi@gmail.com'}${params}`}>{children}</a>;
-  };
 
   return (
       <div>
