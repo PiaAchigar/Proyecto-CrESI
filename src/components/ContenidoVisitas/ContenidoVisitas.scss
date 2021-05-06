@@ -11,13 +11,16 @@
     margin-bottom: 1rem;
   }
   p{
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .talleres{
     .article-talleres{
       margin: .5rem;
       p{
         margin: .9rem .5rem;
+        .salto{
+          display: none;
+        }
       }
       .img-container{
         img{
@@ -50,7 +53,7 @@
           p{
             text-align: center;
             font-size: 1rem;
-            margin: .2rem 0 2rem 0;
+            margin: .2rem .2 2rem .2;
           }
           .preguntas{
             display: flex;
@@ -89,6 +92,126 @@
   
 }
 
+@media (min-width: 460px){
+  .talleres-visitas-container{
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        p{
+          margin: .9rem .5rem;
+        }
+        .img-container{
+          display: flex;
+          justify-content: center;
+          img{
+            width: 455px;
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
+}
 
-  
+@media screen and (min-width: 580px){
+  .talleres-visitas-container{
+    h1 {
+      font-size: 2.5rem;
+    }
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+        width: 550px;
+        }
+        .img-container{
+          width: 680px;
+          img{
+            width: 550px;
+          }
+        }
+        .visitar-tu-escuela{
+          flex-direction: column;
+          .inscribir-preguntas{
+            .preguntas{
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+
+@media screen and (min-width: 768px){
+  .talleres-visitas-container{
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+        width: 680px;
+        padding-bottom: 1rem;
+        .salto{
+          display: flex;
+          margin: 1rem;
+          border: none;
+          }
+        }
+        .img-container{
+          width: 680px;
+          img{
+            width: 680px;
+          }
+        }
+        .visitar-tu-escuela{
+          h2{
+            font-size: 2rem;
+            margin-top: 2rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+              width: 400px;
+              button{
+                width: 250px;
+                margin-left: 3rem;
+              }
+            }
+            .email{
+              width: 320px;
+              padding: 0;
+              margin: 1rem 2rem 1rem 0;
+              text-align: start;
+            }
+            .preguntas{
+              margin-top: 2rem;
+              width: 700px;
+              align-items: flex-start;
+              p{
+                margin-left: 2rem;
+                text-align: start;
+              }
+              h3{
+                margin-left: 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
