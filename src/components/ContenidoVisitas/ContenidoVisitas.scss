@@ -183,15 +183,16 @@
           .inscribir-preguntas{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             div{
-              width: 400px;
+              width: 380px;
               button{
                 width: 250px;
                 margin-left: 3rem;
               }
             }
             .email{
-              width: 320px;
+              width: 300px;
               padding: 0;
               margin: 1rem 2rem 1rem 0;
               text-align: start;
@@ -210,6 +211,211 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .talleres-visitas-container{
+    h1 {
+      font-size: 3rem;
+    }
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        .con-los-jovenes{
+        width: 480px;
+        padding-bottom: 1rem;
+        align-self: flex-end;
+        .salto{
+          display: flex;
+          margin: 1rem;
+          border: none;
+          }
+        }
+        .img-container{
+          position: absolute;
+          left: 1rem;
+          top: 15rem;
+          width: 55%;
+          img{
+            width: 100%;
+          }
+        }
+        .visitar-tu-escuela{
+          align-self: flex-end;
+          width: 500px;
+          h2{
+            font-size: 1.5rem;
+            margin-top: .5rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            div{
+              width: 200px;
+              button{
+                width: 250px;
+              }
+            }
+            .email{
+              width: 260px;
+              padding: 0;
+              text-align: center;
+            }
+            .preguntas{
+              margin-top: .5rem;
+              width: 500px;
+              align-items: flex-start;
+              p{
+                width: 480px;
+                padding-right: .8rem;
+                margin-left: 2rem;
+                text-align: start;
+              }
+              h3{
+                margin-left: 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      .article-visitas{
+        align-self: flex-start;
+        margin-left: 9rem;
+      }
+      .visita-img{
+        display: flex;
+        position: absolute;
+        right: 7rem;
+        top:900px;
+        width: 35%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .talleres-visitas-container{
+    h1 {
+      margin-top: 2rem;
+      font-size: 3.5rem;
+      text-align:left;
+      padding: 0 0 1.5rem 6rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+    .talleres{
+      .article-talleres{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        .con-los-jovenes{
+          width: 625px;
+          align-self: flex-end;
+          margin: 0;
+          padding: 0;
+        .salto{
+          display: flex;
+          margin: 1rem;
+          border: none;
+          }
+        }
+        .img-container{
+          position: absolute;
+          left: 2rem;
+          top:14rem;
+          width: 650px;
+          img{
+            width: 650px;
+            height: 440px;
+          }
+        }
+        .visitar-tu-escuela{
+          align-self: flex-end;
+          width: 670px;
+          h2{
+            font-size: 2rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            width: 700px;
+            div{
+              width:300px;
+              button{
+                width: 260px;
+                height: 45px;
+                margin-left: 2rem;
+                font-size: 1.1rem;
+              }
+            }
+            .email{
+              width: 280px;
+              padding: 0;
+              margin: 1rem 2rem 1rem 0;
+              text-align: start;
+            }
+            .preguntas{
+              margin:1.5rem 0 0 0;
+              width: 680px;
+              align-items: flex-start;
+              p{
+                width: 650px;
+                margin: 0 0 0 2rem;
+                text-align: start;
+              }
+              h3{
+                margin: 0 0 1rem 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      h1{
+        font-size: 2.5rem;
+      }
+      .article-visitas{
+        align-self: flex-start;
+        margin-left: 15rem;
+        ul{
+          font-size: 1.1rem;
+        }
+      }
+      .visita-img{
+        display: flex;
+        position: absolute;
+        right: 8rem;
+        top: 1000px;
+        width: 30%;
+        img{
+          width: 100%;
         }
       }
     }
