@@ -5,25 +5,24 @@ import "./BubbleContainer.scss";
 
 //Windows Size
 import useWindowSize from "../../hooks/useWindowSize";
-//Suma de alturas de burbujas
-import SumHeightOfBubbles from "./CalcHeight";
 
 const BubbleContainer = ({ children, content, hidden }) => {
   //
-
-  ///Altura inicial del bubble-container que va a ser la suma de la altura de todas sus burbujas
-  let initialHeight = SumHeightOfBubbles(children);
-
-  //Creo una estado para luego darle altura al bubble-container ya que su contenido al ser absoluto
-  //nunca le va a dar altura, y precisamos que tenga para que se vea el contenido por dentro
-  const [containerHeight, setContainerHeight] = useState(initialHeight);
-
-  const windowSize = useWindowSize();
-
   //Tomo de referencia el bubble-container para actualizar su altura
   const bubbleRef = useRef(null);
+  //Creo una estado para luego darle altura al bubble-container ya que su contenido al ser absoluto
+  //nunca le va a dar altura, y precisamos que tenga para que se vea el contenido por dentro
+  const [containerHeight, setContainerHeight] = useState(
+    bubbleRef.current?.children[0].clientHeight
+  );
+
+  // const windowSize = useWindowSize();
 
   // Tomo la altura final del contenido del primer children que seria el div.content y se la aplico al style de bubble-container
+  useEffect(() => {
+    setContainerHeight(bubbleRef.current?.children[0].clientHeight);
+  }, [containerHeight]);
+
   useEffect(() => {
     let timeouter = setTimeout(() => {
       setContainerHeight(bubbleRef.current?.children[0].clientHeight);
@@ -31,7 +30,7 @@ const BubbleContainer = ({ children, content, hidden }) => {
     return () => {
       clearTimeout(timeouter);
     };
-  }, [containerHeight, windowSize]);
+  }, [containerHeight]);
 
   return (
     <div

@@ -11,9 +11,10 @@ import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
 
 //Componentes
-//Estos dos componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
+//Estos tres componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 
 //Ruteador
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -22,19 +23,13 @@ function App() {
   const location = useLocation();
 
   // Para que automaticamente se haga scroll al top de la pagina a la que se va.
-  useEffect(() => {
-    setTimeout(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-      });
-    }, 500);
-  }, [location]);
+  // useEffect(() => {
+  //   setTimeout(() => { window.scroll({top: 0,left: 0,}); console.log("subiendo");}, 500);  
+  // }, [location]);
 
   return (
     <div className="App">
       <Header />
-
       <Switch>
         <Route path="/" exact component={Inicio} />
         <Route path="/recursos" component={Recursos} />
@@ -43,7 +38,7 @@ function App() {
         <Route path="/tienda" component={Tienda} />
         <Route path="/carrito" component={Carrito} />
       </Switch>
-
+      <WhatsappFloat />
       <Footer />
     </div>
   );

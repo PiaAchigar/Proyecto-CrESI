@@ -8,12 +8,12 @@ import "./QuienesSomos.scss";
 
 const QuienesSomos = () => {
   return (
-    <div className="quienes-porque-container">
+    <div className="quienes-porque-container" id="quienes-somos">
       <section className="quienes-somos">
         <h1>¿Quiénes somos?</h1>
         <article className="article">
           <div className="image-container">
-            <img src={quienes_img} alt="" />
+            <img src={quienes_img} alt="Grupo Crecer" loading="lazy" />
           </div>
           <div className="text-container">
             <h2>Somos la primera app de educación sexual integral de Argentina</h2>
@@ -32,7 +32,7 @@ const QuienesSomos = () => {
         <h1>¿Por qué lo hacemos?</h1>
         <article className="article">
           <div className="image-container">
-            <img src={porque_img} alt="" />
+            <img src={porque_img} alt="Equipo crecer dando charla en escuela" />
           </div>
           <div className="text-container">
             <h2>"Nuestro objetivo es bajar el porcentaje de embarazos en las adolescentes"</h2>
