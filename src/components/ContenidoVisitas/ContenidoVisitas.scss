@@ -1,0 +1,427 @@
+@use "../../sass/colors";
+@use "../../sass/fonts";
+
+.talleres-visitas-container{
+  padding-top: 1.5rem;
+  font-family: fonts.$font-family;
+  h1 {
+    font-size: 1.8rem;
+    color: colors.$gris-medio;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .talleres{
+    .article-talleres{
+      margin: .5rem;
+      p{
+        margin: .9rem .5rem;
+        .salto{
+          display: none;
+        }
+      }
+      .img-container{
+        img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      }
+      .visitar-tu-escuela{
+        h2{
+          font-size: 1.4rem;
+          text-align: center;
+          margin: .9rem;
+        }
+        .inscribir-preguntas{
+          div{
+            display: flex;
+            justify-content: center;
+            button{
+              align-self: center;
+              align-items: center;
+              border: none;
+              border-radius: 10px;
+              width: 240px;
+              padding: .5rem;
+              color: white;
+              background-color: colors.$verde;
+              font-size: 1rem;
+            }
+          }
+          p{
+            text-align: center;
+            font-size: 1rem;
+            margin: .2rem .2 2rem .2;
+          }
+          .preguntas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            h3{
+              font-size: 1rem;
+              margin-bottom: .2rem ;
+            }
+          }  
+        }
+      }
+    }
+  }
+  .visitas{
+    margin-bottom: 3rem;
+    h1{
+      margin: .9rem;
+      margin-bottom: 3rem;
+    }
+    .article-visitas{
+      margin: .9rem;
+      font-size: .9rem;
+      font-weight: bold;
+      li{
+        width: 100%;
+        margin: .3rem .5rem .3rem 1.2rem;
+        list-style-type:disc;
+      }
+      
+    }
+    .visita-img{
+        display: none;
+    }
+  }
+  
+}
+
+@media (min-width: 460px){
+  .talleres-visitas-container{
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        p{
+          margin: .9rem .5rem;
+        }
+        .img-container{
+          display: flex;
+          justify-content: center;
+          img{
+            width: 455px;
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}
+
+@media screen and (min-width: 580px){
+  .talleres-visitas-container{
+    h1 {
+      font-size: 2.5rem;
+    }
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+        width: 550px;
+        }
+        .img-container{
+          width: 680px;
+          img{
+            width: 550px;
+          }
+        }
+        .visitar-tu-escuela{
+          flex-direction: column;
+          .inscribir-preguntas{
+            .preguntas{
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+
+@media screen and (min-width: 768px){
+  .talleres-visitas-container{
+    .talleres{
+      .article-talleres{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+        width: 680px;
+        padding-bottom: 1rem;
+        .salto{
+          display: flex;
+          margin: 1rem;
+          border: none;
+          }
+        }
+        .img-container{
+          width: 680px;
+          img{
+            width: 680px;
+          }
+        }
+        .visitar-tu-escuela{
+          h2{
+            font-size: 2rem;
+            margin-top: 2rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div{
+              width: 380px;
+              button{
+                width: 250px;
+                margin-left: 3rem;
+              }
+            }
+            .email{
+              width: 300px;
+              padding: 0;
+              margin: 1rem 2rem 1rem 0;
+              text-align: start;
+            }
+            .preguntas{
+              margin-top: 2rem;
+              width: 700px;
+              align-items: flex-start;
+              p{
+                margin-left: 2rem;
+                text-align: start;
+              }
+              h3{
+                margin-left: 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .talleres-visitas-container{
+    h1 {
+      font-size: 3rem;
+    }
+    .talleres{
+      .article-talleres{
+        margin: 3rem .8rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        .con-los-jovenes{
+        width: 42%;
+        margin: 0;
+        padding:0;
+        align-self: flex-end;
+        .salto{
+          display: flex;
+          margin: .5rem;
+          border: none;
+          }
+        }
+        .img-container{
+          position: absolute;
+          left: 1rem;
+          top: 10rem;
+          width: 55%;
+          img{
+            width: 100%;
+          }
+        }
+        .visitar-tu-escuela{
+          align-self: flex-end;
+          width: 44%;
+          h2{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            div{
+              width: 200px;
+              button{
+                width: 250px;
+              }
+            }
+            .email{
+              width: 260px;
+              padding: 0;
+              text-align: center;
+            }
+            .preguntas{
+              width: 100%;
+              align-items: flex-start;
+              margin: 0;
+              padding: 0;
+              p{
+                width: 100%;
+                text-align: start;
+                margin: 0;
+                padding: 0 0 0 1.5rem;
+              }
+              h3{
+                margin:1rem 0 0 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      h1{
+        margin-top: 3rem;
+      }
+      .article-visitas{
+        align-self: flex-start;
+        margin-left: 9rem;
+      }
+      .visita-img{
+        display: flex;
+        position: absolute;
+        right: 7rem;
+        top:800px;
+        width: 35%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .talleres-visitas-container{
+    h1 {
+      margin-top: 2rem;
+      font-size: 3.5rem;
+      text-align:left;
+      padding: 0 0 1.5rem 6rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+    .talleres{
+      .article-talleres{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        .con-los-jovenes{
+          width: 625px;
+          align-self: flex-end;
+          margin: 0;
+          padding: 0;
+        .salto{
+          display: flex;
+          margin: 1rem;
+          border: none;
+          }
+        }
+        .img-container{
+          position: absolute;
+          left: 2rem;
+          top:10rem;
+          width: 50%;
+          img{
+            width: 100%;
+          }
+        }
+        .visitar-tu-escuela{
+          align-self: flex-end;
+          width: 670px;
+          h2{
+            font-size: 2rem;
+          }
+          .inscribir-preguntas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            width: 700px;
+            div{
+              width:300px;
+              button{
+                width: 260px;
+                height: 45px;
+                margin-left: 2rem;
+                font-size: 1.1rem;
+              }
+            }
+            .email{
+              width: 280px;
+              padding: 0;
+              margin: 1rem 2rem 1rem 0;
+              text-align: start;
+            }
+            .preguntas{
+              margin:1.5rem 0 0 0;
+              width: 680px;
+              align-items: flex-start;
+              p{
+                width: 650px;
+                margin: 0 0 .5rem 1.5rem;
+                text-align: start;
+              }
+              h3{
+                margin: 1rem 0 .5rem 2.5rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      h1{
+        font-size: 2.5rem;
+      }
+      .article-visitas{
+        align-self: flex-start;
+        margin-left: 15rem;
+        ul{
+          font-size: 1.1rem;
+        }
+      }
+      .visita-img{
+        display: flex;
+        position: absolute;
+        right: 8rem;
+        top: 1000px;
+        width: 30%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
