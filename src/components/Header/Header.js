@@ -35,12 +35,16 @@ const Header = () => {
   window.onscroll = function() {
     
     let scrollYoffset = window.pageYOffset;
+    let windowWidth = window.innerWidth;
 
-    if (scrollYoffset >= 350) {
-      headerRef.current.style.top = '-2.5rem';
+    if(windowWidth >= 768){
 
-    } else {
-      headerRef.current.style.top = '0';
+      if (scrollYoffset >= 350) {
+        headerRef.current.style.top = '-2.5rem';
+  
+      } else {
+        headerRef.current.style.top = '0';
+      }
     }
   }
 
@@ -53,13 +57,21 @@ const Header = () => {
         </div>
         <div className="vertical-line"></div>
         <div className="top-header__socials">
-          <FaFacebookSquare className="social-icon"/>
-          <FaInstagram className="social-icon"/>
-          <FaTwitter className="social-icon"/>
-          <a href="https://www.linkedin.com/company/appcresi/">
+          <a href="https://www.facebook.com/appcresi" target="_blank" rel="noreferrer">
+            <FaFacebookSquare className="social-icon"/>
+          </a>
+          <a href="https://www.instagram.com/appcresi/" target="_blank" rel="noreferrer"> 
+            <FaInstagram className="social-icon"/>
+          </a>
+          <a href="https://twitter.com/appCrESI" target="_blank" rel="noreferrer">
+            <FaTwitter className="social-icon"/>
+          </a>
+          <a href="https://www.linkedin.com/company/appcresi/" target="_blank" rel="noreferrer">
             <FaLinkedin className="social-icon"/>
           </a>
-          <FaYoutube className="social-icon"/>
+          <a href="https://www.youtube.com/channel/UCXxbxxBrPSbY4akDfj3VcIA/videos" target="_blank" rel="noreferrer"> 
+            <FaYoutube className="social-icon"/>
+          </a>
         </div>
       </div>
       <header className="header">
@@ -130,13 +142,21 @@ const Header = () => {
                   <Mailto>appcresi@gmail.com</Mailto>
                 </div>
                 <div className="socials-wrapper">
-                  <FaFacebookSquare className="social-icon"/>
-                  <FaInstagram className="social-icon"/>
-                  <FaTwitter className="social-icon"/>
-                  <a href="https://www.linkedin.com/company/appcresi/">
+                  <a href="https://www.facebook.com/appcresi" target="_blank" rel="noreferrer">
+                    <FaFacebookSquare className="social-icon"/>
+                  </a>
+                  <a href="https://www.instagram.com/appcresi/" target="_blank" rel="noreferrer">
+                    <FaInstagram className="social-icon"/>
+                  </a>
+                  <a href="https://twitter.com/appCrESI" target="_blank" rel="noreferrer">
+                    <FaTwitter className="social-icon"/>
+                  </a>
+                  <a href="https://www.linkedin.com/company/appcresi/" target="_blank" rel="noreferrer">
                     <FaLinkedin className="social-icon"/>
                   </a>
-                  <FaYoutube className="social-icon"/>
+                  <a href="https://www.youtube.com/channel/UCXxbxxBrPSbY4akDfj3VcIA/videos" target="_blank" rel="noreferrer">
+                    <FaYoutube className="social-icon"/>
+                  </a>
                 </div>
               </div>
             </div>
