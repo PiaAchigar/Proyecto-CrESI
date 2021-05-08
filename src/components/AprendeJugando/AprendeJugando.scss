@@ -27,11 +27,20 @@
       justify-content: center;
       padding: 0 2rem;
       margin-bottom: 1.5rem;
-
-      img {
+      a {
         width: 50%;
         &:first-child {
           margin-right: 0.5rem;
+        }
+
+        img {
+          width: 100%;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(0.92);
+          }
         }
       }
     }

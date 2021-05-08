@@ -17,8 +17,20 @@ const AprendeJugando = () => {
         <h1>Aprende jugando</h1>
         <h2>¡Descargate la app!</h2>
         <div className="jugando__stores">
-          <img src={appStore} alt="apple store" />
-          <img src={googlePlay} alt="play store" />
+          <a
+            href="https://play.google.com/store?hl=es_419&gl=US"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={googlePlay} alt="play store" />
+          </a>
+          <a
+            href="https://www.apple.com/es/ios/app-store/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={appStore} alt="apple store" />
+          </a>
         </div>
         <div className="play-online-btn">
           <a href="https://www.google.com/" target="_blank" rel="noreferrer">
@@ -30,8 +42,8 @@ const AprendeJugando = () => {
           <HeroSwitcher />
         </div>
         <p className="jugando__info">
-          Es un juego de trivia,mediante una ruleta dividida en seis categorías, permite evaluar los
-          conocimientos del usuario acerca de temas como{" "}
+          Es un juego de trivia,mediante una ruleta dividida en seis categorías,
+          permite evaluar los conocimientos del usuario acerca de temas como{" "}
           <strong>salud, sexualidad, derechos, diversidad, prevención.</strong>
         </p>
       </div>
