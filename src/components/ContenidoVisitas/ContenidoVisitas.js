@@ -11,8 +11,11 @@ const ContenidoVisitas = () => {
             <section className="talleres">
                 <h1>Talleres en las aulas</h1>
                 <article className="article-talleres">
-                    <p className="con-los-jovenes">Con los jovenes de CrESI <b>no nos quedamos quietos y salimos a dar talleres en las escuelas.</b><br/> <hr className="salto"/>
-                    Utilizando juegos y dinámicas vamos aprendiendo y contestando dudas. Además vamos ampliando nuestra base de datos para incorporar nuevas dudas a nuestra app.</p>
+                    <p className="con-los-jovenes">Con los jovenes de CrESI <b>no nos quedamos quietos y salimos a dar talleres en las escuelas.</b>
+                    </p>
+                    <p className="con-los-jovenes">
+                    Utilizando juegos y dinámicas vamos aprendiendo y contestando dudas. Además vamos ampliando nuestra base de datos para incorporar nuevas dudas a nuestra app.
+                    </p>
                     <div className="img-container">
                         <img src={porque_img} alt="porque_img"/>
                     </div>
