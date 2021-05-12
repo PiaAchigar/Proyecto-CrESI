@@ -1,9 +1,12 @@
 import React from "react";
 
+//Components
+import Contactanos from "../components/Contactanos/Contactanos";
+
 const Contacto = () => {
   return (
     <div className="page-wrapper">
-      <h1>Pagina de Contacto</h1>
+      <Contactanos />
     </div>
   );
 };
