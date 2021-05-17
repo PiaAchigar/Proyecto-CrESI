@@ -2,26 +2,32 @@
 
 .contactanos {
   //DESKTOP_TABLET
+  width: 100%;
   .desktop-tablet-wrapper {
-    display: none;
+    display: none; //NO TOCAR
+    //NO TOCAR
 
     @media (min-width: 768px) {
       display: flex;
       padding: 3rem 0;
+      width: 100%;
 
-      .content {
+      .content-info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 1rem 0 3rem;
+        padding: 0 0 0 3rem;
         width: 50%;
         -webkit-animation: swipe-to-right;
         animation: swipe-to-right;
         transform: translateX(-100%);
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
+
         @-webkit-keyframes swipe-to-right {
           from {
             transform: translateX(-100%);
@@ -47,25 +53,33 @@
           color: colors.$gris-medio;
           font-size: 2.5rem;
           margin-bottom: 2rem;
+          transform: translateX(-1rem);
 
           @media (min-width: 1200px) {
-            font-size: 3rem;
+            font-size: 3.5rem;
           }
         }
         h3 {
           font-size: 2rem;
           margin-bottom: 2rem;
+          transform: translateX(-1rem);
+          @media (min-width: 1400px) {
+            font-size: 2.2rem;
+          }
         }
         ul {
           font-size: 1.25rem;
+          @media (min-width: 1400px) {
+            font-size: 1.4rem;
+          }
           li {
             list-style-type: disc;
 
             &:first-child {
-              margin-bottom: 2rem;
+              margin-bottom: 3rem;
             }
             &:last-child {
-              margin-bottom: 4rem;
+              margin-bottom: 6rem;
             }
           }
         }
@@ -77,10 +91,11 @@
           }
         }
         .socials-wrapper {
+          // border: solid 1px red;
           .social-icon {
             font-size: 2rem;
             color: colors.$gris-oscuro;
-            margin-right: 1.75rem;
+            margin-right: 1.25rem;
             transition: 0.25s ease-in-out;
             @media (min-width: 1200px) {
               font-size: 3rem;
@@ -93,11 +108,20 @@
         }
       }
       .form {
-        border: solid 2px red;
-        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        width: 60%;
+
+        @media (min-width: 1024px) {
+          justify-content: center;
+        }
 
         @media (min-width: 1200px) {
           width: 60%;
+          // border: solid 2px red;
+        }
+        @media (min-width: 1600px) {
+          padding-right: 5rem;
         }
       }
     }
@@ -107,8 +131,14 @@
     display: flex;
     flex-direction: column;
     border: solid 2px red;
+
     @media (min-width: 768px) {
       display: none;
+    }
+
+    .form {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
