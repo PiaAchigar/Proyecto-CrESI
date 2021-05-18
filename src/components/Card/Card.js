@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa"
 
 
 const Card = (props) => {
-  console.log(props)
+
   return (
     <div>
       <div className="container1">
@@ -18,8 +18,8 @@ const Card = (props) => {
         <p>{props.objetivo}</p>
       </div>
       <div className="card-download">
-        <FaDownload className="download" size="2rem" color="#2cbd9b"/>
-        <h2>Descargar PDF</h2>
+      <a href={props.descarga}><FaDownload className="download" size="2rem" color="#2cbd9b"/></a>
+        <h2><a className="a-mobile" href={props.descarga}>Descargar PDF</a></h2>
       </div>
       </div>
     </div>
@@ -32,17 +32,13 @@ const Card = (props) => {
     </div>
     <div className="textos">
     <h1>{props.titulo}</h1>
-    <p>Cada día, más de 1 millón de personas contraen una onfección de transmisión sexual (ITS)<br/>
-    <p className="items">
-    •¿Qué con las ITS?<br/>
-    •¿Cómo comenzar a hablar del tema?<br/>
-    •¿Cómo usar CrESI para trabajar el tema?<br/>
-    </p>
-    </p> 
-    {/* <p>{props.informacion}</p> */}
+    <p>{props.informacion}</p>
+    <p>{props.informacion2}</p>
+    <p>{props.informacion3}</p>
+    <p>{props.informacion4}</p>
     <div className="card-download">
-      <FaDownload className="download" size="2rem" />
-      <h2>Descargar PDF</h2>
+      <a href={props.descarga} className="download"><FaDownload className="download" size="2rem" /></a>
+      <h2><a href={props.descarga}>Descargar PDF</a></h2>
       <h2>|</h2>
     </div>
     </div>
