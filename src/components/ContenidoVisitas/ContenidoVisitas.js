@@ -1,6 +1,8 @@
 //Style
 import "./ContenidoVisitas.scss";
 
+import Mailto from "../Mailto";
+
 //imagenes
 import porque_img from "../../assets/img/porque-img.png";
 import visitas_ilustracion from "../../assets/img/visitas-ilustracion.png";
@@ -33,8 +35,7 @@ const ContenidoVisitas = () => {
                   <button>Inscribite haciendo click acá</button>
                 </div>
                 <p className="email">
-                  O escribinos a{" "}
-                  <a href="appcresi@gmail.com">appcresi@gmail.com</a>
+                  O escribinos a <Mailto>appcresi@gmail.com</Mailto>
                 </p>
               </div>
               <div className="preguntas">
