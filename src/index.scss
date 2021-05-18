@@ -23,9 +23,13 @@
   .page-wrapper {
     flex: 1 0 auto;
     background-color: #fff;
-    -webkit-animation: appear 1.5s ease-in;
-    animation: appear 1.5s ease-in;
+    -webkit-animation: appear 1s ease-in;
+    animation: appear 1s ease-in;
     margin-top: 4.5rem;
+
+    @media (min-width: 768px) {
+      margin-top: 7rem;
+    }
 
     @-webkit-keyframes appear {
       from {

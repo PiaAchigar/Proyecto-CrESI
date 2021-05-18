@@ -3,9 +3,6 @@ import React, { useRef, useEffect, useState } from "react";
 //Style
 import "./BubbleContainer.scss";
 
-//Windows Size
-import useWindowSize from "../../hooks/useWindowSize";
-
 const BubbleContainer = ({ children, content, hidden }) => {
   //
   //Tomo de referencia el bubble-container para actualizar su altura

@@ -1,0 +1,450 @@
+@use "../../sass/colors";
+@use "../../sass/fonts";
+
+.talleres-visitas-container {
+  padding-top: 1.5rem;
+  font-family: fonts.$font-family;
+  h1 {
+    font-size: 1.8rem;
+    color: colors.$gris-medio;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .talleres {
+    .article-talleres {
+      margin: 0.5rem;
+      p {
+        margin: 0.9rem 0.5rem;
+        .salto {
+          display: none;
+        }
+      }
+      .img-container {
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .visitar-tu-escuela {
+        h2 {
+          font-size: 1.4rem;
+          text-align: center;
+          margin: 0.9rem;
+        }
+        .inscribir-preguntas {
+          .inscribite-aca-wrapper {
+            div {
+              display: flex;
+              justify-content: center;
+              button {
+                align-self: center;
+                align-items: center;
+                border: none;
+                border-radius: 10px;
+                width: 240px;
+                padding: 0.5rem;
+                color: white;
+                background-color: colors.$verde;
+                font-size: 1rem;
+              }
+            }
+          }
+
+          p {
+            text-align: center;
+            font-size: 1rem;
+            margin: 0.2rem 0.2 2rem 0.2;
+          }
+          .preguntas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            h3 {
+              font-size: 1rem;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .visitas {
+    margin-bottom: 3rem;
+    h1 {
+      margin: 0.9rem;
+      margin-bottom: 3rem;
+    }
+    .article-visitas {
+      margin: 0.9rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      ul {
+        li {
+          width: 100%;
+          margin: 0.3rem 0.5rem 0.3rem 1.2rem;
+          list-style-type: disc;
+        }
+      }
+
+      .visita-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  .talleres-visitas-container {
+    .talleres {
+      .article-talleres {
+        margin: 0.5rem;
+        p {
+          margin: 0.9rem 0.5rem;
+        }
+        .img-container {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 455px;
+          }
+        }
+      }
+    }
+    .visitas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .talleres-visitas-container {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .talleres {
+      .article-talleres {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 550px;
+        }
+        .img-container {
+          width: 680px;
+          img {
+            width: 550px;
+          }
+        }
+        .visitar-tu-escuela {
+          flex-direction: column;
+          .inscribir-preguntas {
+            .preguntas {
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .talleres-visitas-container {
+    .talleres {
+      .article-talleres {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 680px;
+          padding-bottom: 1rem;
+          .salto {
+            display: flex;
+            margin: 1rem;
+            border: none;
+          }
+        }
+        .img-container {
+          width: 680px;
+          img {
+            width: 680px;
+          }
+        }
+        .visitar-tu-escuela {
+          h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+          }
+          .inscribir-preguntas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .inscribite-aca-wrapper {
+              display: flex;
+              justify-content: center;
+              div {
+                width: 380px;
+                button {
+                  width: 250px;
+                  margin-left: 3rem;
+                }
+              }
+            }
+
+            .email {
+              width: 300px;
+              padding: 0;
+              margin: 1rem 2rem 1rem 0;
+              text-align: start;
+            }
+            .preguntas {
+              margin-top: 2rem;
+              width: 700px;
+              align-items: flex-start;
+              p {
+                margin-left: 2rem;
+                text-align: start;
+              }
+              h3 {
+                margin-left: 2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .talleres-visitas-container {
+    h1 {
+      font-size: 3rem;
+    }
+    .talleres {
+      .article-talleres {
+        margin: 3rem 0.8rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        .con-los-jovenes {
+          width: 50%;
+          margin: 0;
+          padding: 0;
+          padding-left: 3rem;
+          align-self: flex-end;
+
+          .salto {
+            display: flex;
+            margin: 0.5rem;
+            border: none;
+          }
+        }
+        .img-container {
+          position: absolute;
+          left: 2rem;
+          top: 8rem;
+          width: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+        .visitar-tu-escuela {
+          align-self: flex-end;
+          width: 50%;
+          padding-left: 3rem;
+          h2 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-left: 0;
+            text-align: start;
+          }
+          .inscribir-preguntas {
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            justify-content: flex-start;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            .inscribite-aca-wrapper {
+              width: 100%;
+              div {
+                width: 200px;
+                button {
+                  width: 250px;
+                  margin-left: 0;
+                }
+              }
+            }
+
+            .email {
+              width: 260px;
+              padding: 0;
+              text-align: center;
+            }
+            .preguntas {
+              width: 100%;
+              align-items: flex-start;
+              margin: 0;
+              padding: 0;
+              p {
+                width: 100%;
+                text-align: start;
+                margin: 0;
+                padding: 0;
+              }
+              h3 {
+                margin-top: 1rem;
+                margin-left: 0;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-top: 3rem;
+      }
+      .article-visitas {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 15vw;
+
+        .visita-img {
+          display: block;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+          margin-left: 3rem;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .talleres-visitas-container {
+    h1 {
+      margin-top: 2rem;
+      font-size: 3.5rem;
+      text-align: left;
+      padding: 0 0 1.5rem 6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .talleres {
+      .article-talleres {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem 4rem 0;
+        .con-los-jovenes {
+          width: 45%;
+          align-self: flex-end;
+          margin: 0;
+        }
+        .img-container {
+          position: absolute;
+          left: 4rem;
+          top: 10rem;
+          width: 50%;
+          max-height: 400px;
+          max-width: 800px;
+          img {
+            width: 100%;
+          }
+        }
+        .visitar-tu-escuela {
+          align-self: flex-end;
+          width: 45%;
+          h2 {
+            font-size: 2rem;
+          }
+          .inscribir-preguntas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            width: 100%;
+            .inscribite-aca-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              div {
+                width: 45%;
+                button {
+                  width: 100%;
+                  //height: 45px;
+                  margin-left: 0;
+                  font-size: 1.1rem;
+                }
+              }
+              .email {
+                width: auto;
+                padding: 0;
+                margin: 0rem 0rem 0rem 1rem;
+                text-align: start;
+              }
+            }
+
+            .preguntas {
+              //margin:1.5rem 0 0 0;
+              width: 100%;
+              align-items: flex-start;
+              text-align: start;
+              p {
+                width: 100%;
+                //margin: 0 0 .5rem 1.5rem;
+                text-align: start;
+                padding: 0;
+              }
+              h3 {
+                margin: 1rem 0 0.5rem 0;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .visitas {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-start;
+      h1 {
+        font-size: 2.5rem;
+      }
+      .article-visitas {
+        ul {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
