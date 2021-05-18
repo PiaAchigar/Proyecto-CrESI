@@ -1,4 +1,24 @@
 @use "../../sass/colors";
+a {
+  color: colors.$blanco;
+  ::after {
+    color: colors.$blanco;
+  }
+  ::before {
+    color: colors.$blanco;
+  }
+}
+
+.a-mobile {
+  color: colors.$gris-oscuro;
+  ::after {
+    color: colors.$gris-oscuro;
+  }
+  ::before {
+    color: colors.$gris-oscuro;
+  }
+}
+
 .container2 {
   display: none;
 }
@@ -125,8 +145,8 @@
       border-radius: 10px;
       background-color: colors.$verde;
       margin-top: 1rem;
-      margin-left: 2rem;
-      padding: .2rem;
+      margin-left: 4rem;
+      padding: .1rem;
       h2 {
         color: colors.$blanco;
         order: 1;
@@ -143,9 +163,12 @@
       }
     }
     .textos {
+      width: 100%;
       padding: .7rem;
       p {
         text-align: start;
+        font-size: .8rem;
+        word-spacing: 0.1rem;
       }
       .items {
         padding-left: 1rem;
