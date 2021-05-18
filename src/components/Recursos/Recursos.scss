@@ -1,4 +1,15 @@
 @use "../../sass/colors";
+
+.a-mail {
+  color: #4887DF;
+  ::after {
+    color: #4887DF;
+  }
+  ::before {
+    color: #4887DF;
+  }
+}
+
 .recursos-tablet {
   display: none;
 }
@@ -22,7 +33,7 @@
   background: transparent;
 
   h1 {
-    color: colors.$subtitulos;
+    color: colors.$gris-medio;
     margin: 2rem;
   }
 
@@ -48,7 +59,7 @@
   background: transparent;
 
   h1 {
-    color: colors.$subtitulos;
+    color: colors.$gris-medio;
     margin: 2rem;
   }
 
@@ -88,6 +99,7 @@
   }
 
   .recursos-tablet {
+  margin-top: 3rem;
   text-align: center;
   background: transparent;
   display: flex;
@@ -95,19 +107,22 @@
   flex-direction: column;
 
   h1 {
-    color: colors.$subtitulos;
+    color: colors.$gris-medio;
   }
   .h1-recursos-tablet {
     order: -1;
-    align-self: flex-end;
-    color: colors.$subtitulos;
-    margin: 2rem;
+    align-self: center;
+    color: colors.$gris-medio;
+    margin-top: 2rem;
+    margin-left: 370px;
   }
   p {
     order: 1;
     width: 40%;
     margin: 2rem;
     text-align: justify;
+    padding-top: 25px;
+
   }
   .imagen-recursos-tablet {
     align-self: flex-start;
@@ -123,7 +138,7 @@
   }
   .img-texto {
     display: flex;
-
+    margin-bottom: 2rem;
   }
   }
 
@@ -134,7 +149,7 @@
     margin: 3rem;
   
     h1 {
-      color: colors.$subtitulos;
+      color: colors.$gris-medio;
       margin: 2rem;
     }
   
@@ -175,8 +190,11 @@
 
   .h1-recursos-desktop {
     display: block;
-    font-size: 3rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     margin-bottom: 3rem;
+    color: colors.$gris-medio;
+
   }
 
   .recursos {
@@ -196,12 +214,16 @@
   flex-direction: column;
 
   h1 {
-    color: colors.$subtitulos;
+    color: colors.$gris-medio;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
   }
+
   .h1-recursos-tablet {
     order: -1;
     align-self: flex-end;
-    color: colors.$subtitulos;
+    color: colors.$gris-medio;
     margin: 2rem;
   }
   p {
@@ -225,6 +247,7 @@
   }
   .img-texto {
     display: flex;
+    margin-top: 6rem;
 
   }
   }
@@ -236,7 +259,7 @@
     margin: 3rem;
   
     h1 {
-      color: colors.$subtitulos;
+      color: colors.$gris-medio;
       margin: 2rem;
     }
   
