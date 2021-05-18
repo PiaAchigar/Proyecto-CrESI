@@ -1,9 +1,11 @@
 import React from "react";
 
+import CarritoVacio from "../components/CarritoVacio/CarritoVacio"
+
 const Carrito = () => {
   return (
     <div className="page-wrapper">
-      <h1>Pagina de Carrito</h1>
+      <CarritoVacio/>
     </div>
   );
 };
