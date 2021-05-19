@@ -1,6 +1,6 @@
 import React from "react"
 import "./CarritoVacio.scss"
-
+import { Link } from "react-router-dom"
 const CarritoVacio = () => {
     return(
         <div className="carrito">
@@ -8,7 +8,9 @@ const CarritoVacio = () => {
             <hr />
             <div className="vacio-ir">
                 <h2>Tu carrito está vacío</h2>
-                <button className="ir">Ir a la Tienda</button>
+                <Link exact to = {`/Tienda`} className="link-item">
+                    <button className="ir">Ir a la Tienda</button>
+                </Link>
             </div>
         </div>
     )
