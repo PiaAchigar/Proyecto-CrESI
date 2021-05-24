@@ -7,6 +7,7 @@ import AprendeJugando from "../components/AprendeJugando/AprendeJugando";
 import QuienesSomos from "../components/QuienesSomos/QuienesSomos.js";
 import Premios from "../components/Premios/Premios";
 import QueDicen from "../components/QueDicen/QueDicen";
+import Apoyo from "../components/Apoyo/Apoyo";
 
 const Inicio = () => {
   return (
@@ -23,6 +24,9 @@ const Inicio = () => {
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
       <QueDicen />
+      <BubbleContainer content={<Apoyo/>}>
+        <Bubble height="7vw" top="-20%" right="35%" celeste />
+      </BubbleContainer>
       {/* <AprendeJugando />
       <QuienesSomos />
       <Premios />
