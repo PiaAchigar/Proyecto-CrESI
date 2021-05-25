@@ -8,7 +8,10 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsappFloat = () => {
   return (
     <div className="whatsapp-float">
-      <FaWhatsapp className="icon-wsp" />
+      {/* NUMERO CELULAR DE ANDRES */}
+      <a href="https://wa.me/543513325737" target="_blank">
+        <FaWhatsapp className="icon-wsp" />
+      </a>
     </div>
   );
 };

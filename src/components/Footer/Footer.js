@@ -2,6 +2,9 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+//Componentes
+import InvitameCafecitoBtn from "../InvitameCafecitoBtn/InvitameCafecitoBtn";
+
 //Iconos
 import { FiSend } from "react-icons/fi";
 import {
@@ -13,7 +16,7 @@ import {
 } from "react-icons/fa";
 import logoheader from "../../assets/img/logo-completo.png";
 import logocompleto from "../../assets/img/logo-completo.png";
-import logoCafe from "../../assets/img/cafecito-logo.svg";
+// import logoCafe from "../../assets/img/cafecito-logo.svg";
 
 //Style
 import "./Footer.scss";
@@ -82,12 +85,7 @@ const Footer = () => {
           </div>
           <div className="donacion">
             <h1>DONACIONES</h1>
-            <div className="divWrapCafe">
-              <button>
-                <img src={logoCafe} alt="" />
-              </button>
-              <input type="text" name="" id="" placeholder="Invitame un Cafecito (ARS $100)" />
-            </div>
+            <InvitameCafecitoBtn txtColor="#8fa2cc" bgColor="#fff" />
           </div>
         </div>
         <hr />

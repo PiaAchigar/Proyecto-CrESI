@@ -23,14 +23,12 @@ const Inicio = () => {
       <BubbleContainer content={<Premios />}>
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
-      <QueDicen />
-      <BubbleContainer content={<Apoyo/>}>
+      <BubbleContainer content={<QueDicen />}>
+        <Bubble height="25vw" top="-10%" right="10%" amarillo />
+      </BubbleContainer>
+      <BubbleContainer content={<Apoyo />}>
         <Bubble height="7vw" top="-20%" right="35%" celeste />
       </BubbleContainer>
-      {/* <AprendeJugando />
-      <QuienesSomos />
-      <Premios />
-      <QueDicen /> */}
     </div>
   );
 };

@@ -67,7 +67,11 @@
       cursor: pointer;
 
       &:hover {
-        background-image: linear-gradient(60deg, colors.$violeta, colors.$verde 60%);
+        background-image: linear-gradient(
+          60deg,
+          colors.$violeta,
+          colors.$verde 60%
+        );
         transform: scale(1.05);
       }
     }

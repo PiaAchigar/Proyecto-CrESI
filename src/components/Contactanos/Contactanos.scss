@@ -4,8 +4,7 @@
   //DESKTOP_TABLET
   width: 100%;
   .desktop-tablet-wrapper {
-    display: none; //NO TOCAR
-    //NO TOCAR
+    display: none;
 
     @media (min-width: 768px) {
       display: flex;
@@ -130,15 +129,38 @@
   .mobile-wrapper {
     display: flex;
     flex-direction: column;
-    border: solid 2px red;
+    padding: 2rem 0 4rem;
 
-    @media (min-width: 768px) {
-      display: none;
+    h1 {
+      text-align: center;
+      color: colors.$gris-medio;
     }
-
     .form {
       width: 90%;
-      margin: 0 auto;
+      margin: 1rem auto 2rem;
+    }
+    p {
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      color: colors.$gris-oscuro;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .socials-wrapper-mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+      .social-icon {
+        font-size: 2.5rem;
+        color: colors.$gris-oscuro;
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }

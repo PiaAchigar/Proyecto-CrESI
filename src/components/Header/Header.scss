@@ -1,13 +1,13 @@
 @use "../../sass/colors";
-.header-wrapper{
+.header-wrapper {
   z-index: 100;
   position: fixed;
   width: 100%;
   top: 0;
   right: 0;
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 
-  .top-header{
+  .top-header {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -15,40 +15,39 @@
       justify-content: flex-end;
       align-items: center;
       background-color: colors.$gris;
-      height: 2.5rem;//Si se cambia esta altura se debe cambiar el top al esconderlo en el jsx
+      height: 2.5rem; //Si se cambia esta altura se debe cambiar el top al esconderlo en el jsx
       padding-right: 1rem;
     }
 
-    .top_header__mailto{
+    .top_header__mailto {
       display: flex;
       align-items: center;
-      .mail-icon{
+      .mail-icon {
         font-size: 2rem;
         color: colors.$gris-oscuro;
         margin-right: 1rem;
       }
     }
-    .vertical-line{
+    .vertical-line {
       width: 2px;
       height: 80%;
       background-color: colors.$gris-oscuro;
       margin: 0 1rem;
     }
-    .top-header__socials{
+    .top-header__socials {
       display: flex;
       align-items: center;
-      .social-icon{
+      .social-icon {
         font-size: 1.5rem;
         color: colors.$gris-oscuro;
         margin-right: 1rem;
 
-        &:hover{
+        &:hover {
           transform: scale(1.2);
           cursor: pointer;
         }
       }
     }
-
   }
   .header {
     display: flex;
@@ -58,7 +57,6 @@
     background-color: colors.$blanco;
     box-shadow: 0px 1px 6px 1px colors.$shadow;
 
-  
     @media screen and (min-width: 768px) {
       justify-content: space-between;
       align-items: center;
@@ -69,7 +67,7 @@
       align-items: center;
       margin-right: auto;
       margin-left: 2rem;
-  
+
       @media screen and (min-width: 768px) {
         position: unset;
         margin-left: 1rem;
@@ -82,7 +80,7 @@
         color: colors.$rojo;
         margin-left: 1rem;
         display: none;
-  
+
         @media screen and (min-width: 768px) {
           display: unset;
         }
@@ -90,23 +88,23 @@
     }
     .main-links {
       display: none;
-  
+
       @media screen and (min-width: 768px) {
         flex-grow: 0.6;
       }
       @media screen and (min-width: 1024px) {
         flex-grow: 0.3;
       }
-  
+
       ul {
         display: flex;
         justify-content: space-between;
-  
+
         li {
           a {
             color: colors.$gris-medio;
             font-weight: 600;
-  
+
             &:hover {
               color: colors.$c-rosa;
             }
@@ -119,7 +117,7 @@
           }
         }
       }
-  
+
       @media screen and (min-width: 768px) {
         display: unset;
       }
@@ -133,7 +131,7 @@
         margin-right: 2rem;
         flex: 0.15;
       }
-  
+
       .button-tienda {
         display: none;
         color: white;
@@ -141,7 +139,7 @@
         border-radius: 5px;
         padding: 0.5rem 1rem;
         transition: 0.2s ease-in-out;
-  
+
         &:hover {
           padding: 1rem 1rem;
         }
@@ -186,7 +184,7 @@
       opacity: 1;
       -webkit-animation: appear 1s ease-in-out;
       animation: appear 0.5s ease-in-out;
-  
+
       @-webkit-keyframes appear {
         from {
           opacity: 0;
@@ -195,7 +193,7 @@
           opacity: 1;
         }
       }
-  
+
       @keyframes appear {
         from {
           opacity: 0;
@@ -209,7 +207,7 @@
       color: colors.$negro;
       width: 3rem;
       cursor: pointer;
-  
+
       @media screen and (min-width: 768px) {
         display: none;
       }
@@ -229,7 +227,7 @@
       -webkit-animation: appear 1s ease-in-out;
       animation: appear 0.5s ease-in-out;
       z-index: 200;
-  
+
       @-webkit-keyframes appear {
         from {
           opacity: 0;
@@ -238,7 +236,7 @@
           opacity: 1;
         }
       }
-  
+
       @keyframes appear {
         from {
           opacity: 0;
@@ -247,7 +245,7 @@
           opacity: 1;
         }
       }
-  
+
       .sidenav__close {
         display: flex;
         justify-content: flex-end;
@@ -258,7 +256,7 @@
         height: 10vh;
         cursor: pointer;
       }
-  
+
       ul {
         display: flex;
         flex-direction: column;
@@ -267,17 +265,16 @@
         padding: 1rem 0;
         height: 35vh;
         width: 100%;
-  
-  
+
         li {
           font-size: 1.25rem;
           font-weight: 500;
           letter-spacing: 1px;
           padding-left: 15%;
-  
+
           .sidenav__link {
             color: colors.$gris-medio;
-  
+
             &:hover {
               border-bottom: solid 2px colors.$gris-medio;
             }
@@ -290,7 +287,7 @@
             font-weight: 600;
           }
         }
-  
+
         hr {
           height: 0;
           border: solid 1px colors.$gris-medio;
@@ -304,21 +301,20 @@
         width: 100%;
         padding-top: 10%;
         padding-left: 15%;
-  
-        h4{
+
+        h4 {
           color: colors.$gris-medio;
         }
-  
-        .mailto{
+
+        .mailto {
           margin: 1rem 0;
         }
-        .socials-wrapper{
-  
-          .social-icon{
+        .socials-wrapper {
+          .social-icon {
             font-size: 2rem;
             color: colors.$gris-oscuro;
             margin-right: 1rem;
-  
+
             &:active {
               transform: scale(1.3);
             }
@@ -328,4 +324,3 @@
     }
   }
 }
-

@@ -2,7 +2,7 @@ import React from "react";
 //CSS
 import "../Recursos/Recursos.scss";
 //Componentes
-import Card from "../../components/Card/Card";
+import CardRecursos from "../CardRecursos/CardRecursos";
 
 import Mailto from "../../components/Mailto";
 //Imagenes
@@ -101,7 +101,7 @@ const RecursosComponente = () => {
       </div>
 
       <div className="cards">
-        <Card
+        <CardRecursos
           titulo={objetivo1.titulo}
           objetivo={objetivo1.objetivo}
           informacion={objetivo1.informacion}
@@ -110,13 +110,13 @@ const RecursosComponente = () => {
           informacion4={objetivo1.informacion4}
           descarga={objetivo1.descarga}
         />
-        <Card
+        <CardRecursos
           titulo={objetivo2.titulo}
           objetivo={objetivo2.objetivo}
           informacion={objetivo2.informacion}
           descarga={objetivo2.descarga}
         />
-        <Card
+        <CardRecursos
           titulo={objetivo3.titulo}
           objetivo={objetivo3.objetivo}
           informacion={objetivo3.informacion}

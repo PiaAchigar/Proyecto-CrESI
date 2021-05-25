@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 //ReCAPTCHA
 import ReCAPTCHA from "react-google-recaptcha";
@@ -16,23 +16,74 @@ const ContactForm = () => {
   const checkRef = useRef(null);
   const textareaRef = useRef(null);
 
+  //SOLO PARA TEST FETCH
+  useEffect(() => {
+    handleSubmit();
+  }, []);
+
+  const emailEndpoint = "https://cresi-api-rest-desarrollo.herokuapp.com/mail";
+
   const handleCaptcha = () => {
     if (captchaRef.current.getValue()) {
       setHuman(true);
     }
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     const quiereRecibirMail = checkRef.current.checked;
-    const infoContacto = {
-      name: nombre,
-      email: email,
-      mensaje: mensaje.trim(),
-      quiereRecibirMail,
-    };
-    //CONTROLAMOS EL LARGO DEL MENSAJE ENVIADO PARA QUE AL MENOS TENGA MAS DE 15 CARECTERES, MINIMO.
-    console.table(infoContacto);
+    const messageTrimmed = mensaje.trim();
+
+    // const infoContacto = {
+    //   name: nombre,
+    //   mail: email,
+    //   subject: "prueba",
+    //   message: mensaje,
+    //   notice: quiereRecibirMail,
+    // };
+    // const infoContacto = {
+    //   name: "Roberto",
+    //   mail: "asdasd@mail.com",
+    //   subject: "Prueba 2",
+    //   message: "Este es un mensaje de prueba 2",
+    //   notice: true,
+    // };
+    // var myHeaders = new Headers();
+    // myHeaders.append("Content-Type", "application/json");
+
+    // var raw = JSON.stringify({
+    //   name: "German",
+    //   mail: "testpsotman@german.com",
+    //   subject: "Prueba postman german",
+    //   message: "Este es un mensaje de prueba,Este es un mensaje de prueba",
+    //   notice: true,
+    // });
+
+    // var requestOptions = {
+    //   method: "POST",
+    //   body: raw,
+    //   redirect: "follow",
+    // };
+
+    // fetch(
+    //   "https://cresi-api-rest-desarrollo.herokuapp.com/mail",
+    //   requestOptions
+    // )
+    //   .then((response) => response.json())
+    //   .then((result) => console.log(result))
+    //   .catch((error) => console.log("error", error));
+
+    // fetch(emailEndpoint, {
+    //   method: "POST",
+    //   body: JSON.stringify(infoContacto),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //   })
+    //   .catch((error) => {
+    //     console.log("error de catch: " + error);
+    //   });
   };
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
@@ -45,7 +96,7 @@ const ContactForm = () => {
           placeholder="Ingresa tu nombre"
           maxLength="30"
           autoComplete="off"
-          required
+          // required
         />
       </div>
       <div className="input-group">
@@ -56,7 +107,7 @@ const ContactForm = () => {
           id="email"
           placeholder="tuemail@mail.com"
           autoComplete="off"
-          required
+          // required
         />
       </div>
       <div className="input-group">
@@ -66,7 +117,7 @@ const ContactForm = () => {
           onChange={(e) => setMensaje(e.target.value)}
           placeholder="Escribinos algo.."
           ref={textareaRef}
-          required
+          // required
           minLength="25"
         ></textarea>
       </div>

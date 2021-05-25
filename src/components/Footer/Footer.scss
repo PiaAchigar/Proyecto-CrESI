@@ -127,41 +127,6 @@
           justify-content: center;
           padding-bottom: 1rem;
         }
-        .divWrapCafe {
-          display: flex;
-          justify-content: space-between;
-          button {
-            border: 0;
-            padding-right: 8px;
-            background-color: transparent;
-            img {
-              width: 2.5rem;
-              height: 2.5rem;
-            }
-          }
-          input {
-            width: 85%;
-            height: 2.5rem;
-            border: 1px solid #8fa2cc;
-            border-radius: 10px;
-            padding-left: 0.8rem;
-          }
-          input::-webkit-input-placeholder {
-            color: #8fa2cc;
-          }
-          input::-moz-placeholder {
-            color: #8fa2cc;
-          }
-          input:-ms-input-placeholder {
-            color: #8fa2cc;
-          }
-          input::-ms-input-placeholder {
-            color: #8fa2cc;
-          }
-          input::placeholder {
-            color: #8fa2cc;
-          }
-        }
       }
     }
     .redes-copy {

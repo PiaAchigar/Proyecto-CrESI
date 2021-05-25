@@ -1,9 +1,17 @@
 import React from "react";
 
+//Components
+import TiendaWrapper from "../components/TiendaWrapper/TiendaWrapper";
+import Bubble from "../components/BubbleContainer/Bubble";
+import BubbleContainer from "../components/BubbleContainer/BubbleContainer";
+
 const Tienda = () => {
   return (
     <div className="page-wrapper">
-      <h1>Pagina de Tienda</h1>
+      <BubbleContainer content={<TiendaWrapper />} hidden>
+        <Bubble height="225px" top="0" left="0" amarillo />
+        <Bubble height="155px" bottom="20%" right="30%" violeta />
+      </BubbleContainer>
     </div>
   );
 };

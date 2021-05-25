@@ -18,14 +18,14 @@ const AprendeJugando = () => {
         <h2>¡Descargate la app!</h2>
         <div className="jugando__stores">
           <a
-            href="https://play.google.com/store?hl=es_419&gl=US"
+            href="https://play.google.com/store/apps/details?id=appinventor.ai_tallerprogramacionma.CrESIVersion1&hl=es_AR&gl=US"
             target="_blank"
             rel="noreferrer"
           >
             <img src={googlePlay} alt="play store" />
           </a>
           <a
-            href="https://www.apple.com/es/ios/app-store/"
+            href="https://apps.apple.com/ar/app/cresi/id1464565385"
             target="_blank"
             rel="noreferrer"
           >
@@ -33,7 +33,7 @@ const AprendeJugando = () => {
           </a>
         </div>
         <div className="play-online-btn">
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             ¡Jugar Online!
           </a>
         </div>

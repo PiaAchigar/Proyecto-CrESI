@@ -1,0 +1,25 @@
+@use "../../sass/colors";
+
+.cafecito-btn {
+  display: flex;
+  height: 2.5rem;
+
+  .cafecito-logo {
+    height: 100%;
+    margin-right: 0.5rem;
+  }
+  .cafecito-input {
+    outline: none;
+    border: solid 1px colors.$cafecito;
+    border-radius: 10px;
+    height: 100%;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: 0.1s all;
+
+    &:hover {
+      border: solid 2px white;
+      box-shadow: 0 0 1px 2px colors.$cafecito;
+    }
+  }
+}
