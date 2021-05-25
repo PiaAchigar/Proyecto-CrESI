@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Componentes
 import Bubble from "../components/BubbleContainer/Bubble";
@@ -10,6 +10,9 @@ import QueDicen from "../components/QueDicen/QueDicen";
 import Apoyo from "../components/Apoyo/Apoyo";
 
 const Inicio = () => {
+  useEffect(() => {
+    console.log("pagina inicio");
+  }, []);
   return (
     <div className="page-wrapper">
       <BubbleContainer content={<AprendeJugando />}>

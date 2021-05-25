@@ -27,19 +27,19 @@ const QueDicen = () => {
           <CardArticulo
             src={lanacion}
             alt="la nacion logo"
-            href="https://google.com"
+            href="https://www.lanacion.com.ar/tecnologia/cresi-app-creada-estudiantes-secundarios-ensenar-educacion-nid2308856/"
             text="CrESI: la app creada por estudiantes secundarios para enseñar Educación Sexual Integral."
           />
           <CardArticulo
             src={pagina12}
             alt="pagina 12 logo"
-            href="https://google.com"
+            href="https://www.pagina12.com.ar/263910-una-app-de-educacion-sexual-para-jovenes"
             text="Una app de educacion sexual para jóvenes"
           />
           <CardArticulo
             src={tn}
             alt="tn logo"
-            href="https://google.com"
+            href="https://tn.com.ar/tecno/f5/como-nacio-cresi-la-aplicacion-que-busca-derribar-tabues-sobre-la-educacion-sexual-integral_1028118/"
             text="Cómo nació CrESI, la app que busca derribar tabúes sobre la Educación Sexual Integral"
           />
         </div>

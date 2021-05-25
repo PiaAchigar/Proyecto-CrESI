@@ -11,7 +11,12 @@ const CardArticulo = ({ src, alt, text, href }) => {
       <div className="card-botomm">
         <p>{text}</p>
 
-        <a href={href} className="btn-articulo">
+        <a
+          href={href}
+          className="btn-articulo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Ver
         </a>
       </div>

@@ -18,6 +18,7 @@ const InvitameCafecitoBtn = ({ txtColor, bgColor }) => {
         alt="ilustracion taza de cafe"
         className={hover ? "cafecito-logo bounce-1" : "cafecito-logo"}
       />
+      <a href="" target></a>
       <input
         type="button"
         value="Invitame un Cafecito (ARS $100)"

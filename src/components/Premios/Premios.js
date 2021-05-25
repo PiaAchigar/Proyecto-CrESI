@@ -58,7 +58,9 @@ const Premios = () => {
           <CardPremios
             img={impulso}
             alt={"Premio Impulso Joven emprende"}
-            texto={"Dirección Provincial de Desarrollo de Buenos Aires Área de la Juventud"}
+            texto={
+              "Dirección Provincial de Desarrollo de Buenos Aires Área de la Juventud"
+            }
             premio={"Pre-finalistas"}
           />
         </div>
