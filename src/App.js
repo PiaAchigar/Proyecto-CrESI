@@ -9,6 +9,7 @@ import Visitas from "./pages/Visitas";
 import Contacto from "./pages/Contacto";
 import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
+import DetalleProducto from "./pages/DetalleProducto";
 
 //Componentes
 //Estos tres componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
@@ -20,7 +21,6 @@ import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <div className="App">
       <Header />
@@ -29,7 +29,8 @@ function App() {
         <Route path="/recursos" component={Recursos} />
         <Route path="/visitas" component={Visitas} />
         <Route path="/contacto" component={Contacto} />
-        <Route path="/tienda" component={Tienda} />
+        <Route path="/tienda" component={Tienda} exact />
+        <Route path="/tienda/:id" component={DetalleProducto} exact />
         <Route path="/carrito" component={Carrito} />
       </Switch>
       <WhatsappFloat />

@@ -1,10 +1,12 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./CardTienda.scss";
 
-const CardTienda = ({ img, alt, texto, valor }) => {
+const CardTienda = ({ img, alt, texto, valor, id }) => {
   return (
-    <div className="card-tienda">
+    <Link to={`/tienda/${id}`} className="card-tienda">
       <div className="card-top">
         <img src={img} alt={alt} />
       </div>
@@ -13,7 +15,7 @@ const CardTienda = ({ img, alt, texto, valor }) => {
         <hr />
         <p className="p-botomm">{valor}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

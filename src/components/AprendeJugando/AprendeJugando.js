@@ -33,7 +33,7 @@ const AprendeJugando = () => {
           </a>
         </div>
         <div className="play-online-btn">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="" target="_blank" rel="noreferrer">
             ¡Jugar Online!
           </a>
         </div>
