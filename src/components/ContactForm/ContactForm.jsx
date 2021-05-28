@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 
 //ReCAPTCHA
 import ReCAPTCHA from "react-google-recaptcha";
@@ -6,20 +6,20 @@ import ReCAPTCHA from "react-google-recaptcha";
 //Estilos
 import "./ContactForm.scss";
 
+//Imagenes
+import logoheader from "../../assets/img/logo-header.png";
+import { HiOutlineMail } from "react-icons/hi";
+
 const ContactForm = () => {
   //
   const [human, setHuman] = useState(false);
+  const [response, setResponse] = useState(null);
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
   const captchaRef = useRef(null);
   const checkRef = useRef(null);
   const textareaRef = useRef(null);
-
-  //SOLO PARA TEST FETCH
-  useEffect(() => {
-    handleSubmit();
-  }, []);
 
   const emailEndpoint = "https://cresi-api-rest-desarrollo.herokuapp.com/mail";
 
@@ -29,63 +29,39 @@ const ContactForm = () => {
     }
   };
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     const quiereRecibirMail = checkRef.current.checked;
     const messageTrimmed = mensaje.trim();
 
-    // const infoContacto = {
-    //   name: nombre,
-    //   mail: email,
-    //   subject: "prueba",
-    //   message: mensaje,
-    //   notice: quiereRecibirMail,
-    // };
-    // const infoContacto = {
-    //   name: "Roberto",
-    //   mail: "asdasd@mail.com",
-    //   subject: "Prueba 2",
-    //   message: "Este es un mensaje de prueba 2",
-    //   notice: true,
-    // };
-    // var myHeaders = new Headers();
-    // myHeaders.append("Content-Type", "application/json");
+    const infoContacto = {
+      name: nombre,
+      mail: email,
+      subject: "email enviado desde Cresi",
+      message: messageTrimmed,
+      notice: quiereRecibirMail,
+    };
 
-    // var raw = JSON.stringify({
-    //   name: "German",
-    //   mail: "testpsotman@german.com",
-    //   subject: "Prueba postman german",
-    //   message: "Este es un mensaje de prueba,Este es un mensaje de prueba",
-    //   notice: true,
-    // });
-
-    // var requestOptions = {
-    //   method: "POST",
-    //   body: raw,
-    //   redirect: "follow",
-    // };
-
-    // fetch(
-    //   "https://cresi-api-rest-desarrollo.herokuapp.com/mail",
-    //   requestOptions
-    // )
-    //   .then((response) => response.json())
-    //   .then((result) => console.log(result))
-    //   .catch((error) => console.log("error", error));
-
-    // fetch(emailEndpoint, {
-    //   method: "POST",
-    //   body: JSON.stringify(infoContacto),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //   })
-    //   .catch((error) => {
-    //     console.log("error de catch: " + error);
-    //   });
+    fetch(emailEndpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(infoContacto),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        const { msg } = data;
+        msg.msg_code === "SM002" && setResponse(true);
+      })
+      .catch((error) => {
+        console.log("error de catch: " + error);
+        alert("Ha ocurrido un enviar al enviar tu mensaje, intenta nuevamente");
+        window.location.reload();
+      });
   };
-  return (
+
+  return !response ? (
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="input-group">
         <label htmlFor="nombre">Nombre</label>
@@ -96,7 +72,7 @@ const ContactForm = () => {
           placeholder="Ingresa tu nombre"
           maxLength="30"
           autoComplete="off"
-          // required
+          required
         />
       </div>
       <div className="input-group">
@@ -107,7 +83,7 @@ const ContactForm = () => {
           id="email"
           placeholder="tuemail@mail.com"
           autoComplete="off"
-          // required
+          required
         />
       </div>
       <div className="input-group">
@@ -117,7 +93,7 @@ const ContactForm = () => {
           onChange={(e) => setMensaje(e.target.value)}
           placeholder="Escribinos algo.."
           ref={textareaRef}
-          // required
+          required
           minLength="25"
         ></textarea>
       </div>
@@ -140,6 +116,17 @@ const ContactForm = () => {
         </button>
       )}
     </form>
+  ) : (
+    <div className="email-send-container">
+      <h1>
+        Tu mensaje ha sido enviado, pronto nos pondremos en contacto contigo!
+      </h1>
+      <HiOutlineMail className="mail-icon bounce-1" />
+      <img src={logoheader} alt="logo cresi" />
+      <p>
+        CrESI<sup>&reg;</sup>
+      </p>
+    </div>
   );
 };
 

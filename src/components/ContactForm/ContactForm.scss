@@ -135,3 +135,35 @@
     }
   }
 }
+.email-send-container {
+  height: 600px;
+  padding: 5rem 0;
+  box-shadow: 0 0 6px 2px colors.$gris-medio, 0 0 25px 10px colors.$gris;
+  background-color: colors.$gris;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: colors.$gris-medio;
+  transition: 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  h1 {
+    width: 80%;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+  }
+  .mail-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  img {
+    width: 20%;
+    margin-bottom: 0.5rem;
+  }
+}
