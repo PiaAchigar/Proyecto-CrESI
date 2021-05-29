@@ -39,7 +39,7 @@ const ContenidoVisitas = () => {
                 </p>
               </div>
               <div className="preguntas">
-                <h3>¿Como son los talleres?</h3>
+                <h3>¿Cómo son los talleres?</h3>
                 <p>
                   Duran 2 horas y media, se realizan dinámicas y juegos.
                   Preferentemente para grupos de hasta 50 alumnos, desde 2do a
