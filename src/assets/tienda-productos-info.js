@@ -50,7 +50,7 @@ const productsInfo = [
     },
     imgName: cresi_game_img,
     imgAlt: "",
-    related: ["filtro-azar", "filtro-simple", "filtro-vf"],
+    related: ["filtro-azar", "filtro-simple", "filtro-vf", "cafecito"],
   },
   {
     id: "curso-abp-proyectos",
@@ -68,6 +68,12 @@ const productsInfo = [
     },
     imgName: curso_abp_img,
     imgAlt: "",
+    related: [
+      "abp-recurso-digital",
+      "curso-classroom",
+      "curso-classroom-cero",
+      "curso-app",
+    ],
   },
   {
     id: "cafecito",
@@ -80,6 +86,12 @@ const productsInfo = [
     },
     imgName: cafecito_img,
     imgAlt: "",
+    related: [
+      "abp-recurso-digital",
+      "curso-classroom",
+      "curso-classroom-cero",
+      "curso-app",
+    ],
   },
   {
     id: "curso-classroom",
@@ -102,6 +114,12 @@ const productsInfo = [
     },
     imgName: curso_classroom_img,
     imgAlt: "",
+    related: [
+      "abp-recurso-digital",
+      "curso-abp-proyectos",
+      "curso-classroom-cero",
+      "curso-app",
+    ],
   },
   {
     id: "curso-classroom-cero",
@@ -124,6 +142,12 @@ const productsInfo = [
     },
     imgName: curso_classroom_cero_img,
     imgAlt: "",
+    related: [
+      "abp-recurso-digital",
+      "curso-abp-proyectos",
+      "curso-classroom",
+      "curso-app",
+    ],
   },
   {
     id: "curso-app",
@@ -141,6 +165,12 @@ const productsInfo = [
     },
     imgName: curso_app_img,
     imgAlt: "",
+    related: [
+      "abp-recurso-digital",
+      "curso-abp-proyectos",
+      "curso-classroom-cero",
+      "curso-classroom",
+    ],
   },
   {
     id: "filtro-azar",
@@ -153,6 +183,7 @@ const productsInfo = [
     },
     imgName: filtro_azar_img,
     imgAlt: "",
+    related: ["filtro-simple", "filtro-vf", "cresi-game", "cafecito"],
   },
   {
     id: "filtro-simple",
@@ -165,6 +196,7 @@ const productsInfo = [
     },
     imgName: filtro_simple_img,
     imgAlt: "",
+    related: ["filtro-azar", "filtro-vf", "cresi-game", "cafecito"],
   },
   {
     id: "filtro-vf",
@@ -177,6 +209,7 @@ const productsInfo = [
     },
     imgName: filtro_vf_img,
     imgAlt: "",
+    related: ["filtro-azar", "filtro-simple", "cresi-game", "cafecito"],
   },
 ];
 

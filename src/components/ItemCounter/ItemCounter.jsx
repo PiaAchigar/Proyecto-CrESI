@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 // SCSS
 import "./ItemCounter.scss";
 
 const ItemCounter = () => {
   const [counter, setCounter] = useState(1);
+  const { id } = useParams();
+
+  useEffect(() => {
+    setCounter(1);
+  }, [id]);
 
   const removeItem = () => setCounter(counter - 1);
   const addItem = () => setCounter(counter + 1);

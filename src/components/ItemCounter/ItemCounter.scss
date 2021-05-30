@@ -4,13 +4,8 @@
   background-color: colors.$gris;
   border: solid 5px colors.$gris;
   border-radius: 5px;
-  max-width: 400px;
   width: 100%;
   margin: 0 auto;
-
-  @media (min-width: 768px) {
-    margin: 0 auto 0 0;
-  }
 
   .counter-wrapper {
     display: flex;

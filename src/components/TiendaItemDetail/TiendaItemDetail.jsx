@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 //Componentes
 import ItemCounter from "../ItemCounter/ItemCounter";
+//Imagenes
+import heroapp from "../../assets/img/hero-imgapp.png";
 //SCSS
 import "./TiendaItemDetail.scss";
 
@@ -13,6 +16,18 @@ const TiendaItemDetail = ({
   imgName,
   imgAlt,
 }) => {
+  const { id } = useParams();
+  const [logo, setLogo] = useState(false);
+
+  useEffect(() => {
+    //SI NO EXISTE NI TEMARIO NI DURACION RETORNO EL LOGO CRESI PARA QUE NO QUEDE UN ESPACIO EN BLANCO (SOLO PARA DESKTOP)
+    if (temario.length === 0 && duration === "" && window.innerWidth > 1200) {
+      setLogo(true);
+    } else {
+      setLogo(false);
+    }
+  }, [id, temario.length, duration]);
+
   return (
     <div className="item-detail">
       <div className="img-wrapper">
@@ -27,6 +42,12 @@ const TiendaItemDetail = ({
         <p className="item-detail__description">{description}</p>
       </div>
       <div className="wrapper">
+        {logo && (
+          <div className="img-wrap">
+            <img src={heroapp} alt="app cresi mobile" />
+          </div>
+        )}
+
         <div className="item-detail__temario">
           <h3 className="temario__title">{temario.length > 0 && "Temario:"}</h3>
           <ul className="item-detail__list">
