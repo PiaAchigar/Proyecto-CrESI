@@ -21,7 +21,9 @@ const TiendaItemDetail = ({
       <div className="item-info">
         <h1 className="item-detail__title">{name}</h1>
         <p className="item-detail__price">${price}</p>
-        <ItemCounter />
+        <div className="ItemCounter-wrapper">
+          <ItemCounter />
+        </div>
         <p className="item-detail__description">{description}</p>
       </div>
       <div className="wrapper">

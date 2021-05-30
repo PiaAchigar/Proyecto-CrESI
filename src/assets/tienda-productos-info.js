@@ -32,6 +32,12 @@ const productsInfo = [
     },
     imgName: abp_recurso_digital_img,
     imgAlt: "",
+    related: [
+      "curso-abp-proyectos",
+      "curso-classroom",
+      "curso-classroom-cero",
+      "curso-app",
+    ],
   },
   {
     id: "cresi-game",
@@ -44,6 +50,7 @@ const productsInfo = [
     },
     imgName: cresi_game_img,
     imgAlt: "",
+    related: ["filtro-azar", "filtro-simple", "filtro-vf"],
   },
   {
     id: "curso-abp-proyectos",

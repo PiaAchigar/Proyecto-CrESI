@@ -5,13 +5,19 @@
   grid-template-columns: auto;
 
   .item-info {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
+    width: 90%;
+    place-self: center;
     color: colors.$gris-oscuro;
 
     .item-detail__title {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      border-bottom: solid 1px gray;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.15rem;
+      border-bottom: solid 3px colors.$rojo;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
     }
     .item-detail__price {
       font-size: 1.5rem;
@@ -19,14 +25,25 @@
       margin-bottom: 0.5rem;
       color: colors.$negro;
     }
+    .item-detail__description {
+      font-size: 1.25rem;
+    }
+    .ItemCounter-wrapper {
+      margin: 1rem 0;
+    }
   }
   .wrapper {
+    color: colors.$gris-oscuro;
+    width: 90%;
+    place-self: center;
+    font-size: 1.25rem;
+
     .item-detail__temario {
-      padding: 0 0 1rem 1rem;
       .temario__title {
         margin-bottom: 0.5rem;
       }
       .item-detail__list {
+        margin-bottom: 1rem;
         li {
           list-style-type: disc;
           margin-left: 25px;
@@ -34,8 +51,7 @@
       }
     }
     .item-detail__duration {
-      padding: 0 0 1rem 1rem;
-
+      margin-bottom: 2rem;
       .duration__title {
         margin-bottom: 0.5rem;
       }
@@ -46,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: colors.$gris;
 
     img {
       width: 100%;
@@ -60,11 +75,16 @@
     grid-template-columns: repeat(2, 1fr);
     padding-top: 1rem;
     .item-info {
+      width: 100%;
+      place-self: start;
       grid-column: span 1;
       padding: 1rem;
       padding-bottom: 0;
     }
     .wrapper {
+      width: 100%;
+      place-self: start;
+      margin-top: 1rem;
       grid-column: span 2;
       display: flex;
       justify-content: center;
@@ -77,6 +97,7 @@
       .item-detail__duration {
         flex: 0.5;
         padding: 1rem;
+        margin-bottom: 0;
       }
     }
 
@@ -84,7 +105,7 @@
       grid-column: span 1;
     }
   }
-  @media (min-width: 994px) {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
 
     .item-info {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // SCSS
 import "./ItemCounter.scss";
@@ -15,7 +15,7 @@ const ItemCounter = () => {
         <button
           className="counter-btn"
           onClick={removeItem}
-          disabled={counter == 1}
+          disabled={counter === 1}
         >
           -
         </button>
