@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 //Components
 import TiendaItemDetail from "../components/TiendaItemDetail/TiendaItemDetail.jsx";
-//Array de informacion de productos
+
+// ------ ARRAY DE PRODUCTOS ------ //
 import infoProductos from "../assets/tienda-productos-info";
+// -------------------------------- //
 
 const DetalleProducto = () => {
   const { id } = useParams();
   //Producto en particular a mostrar
   const product = infoProductos.filter((e) => e.id === id);
+  //GO TOP
+  useEffect(() => {
+    setTimeout(() => {
+      window.scroll({
+        top: 0,
+        left: 0,
+      });
+    }, 250);
+  }, []);
 
   return (
     <div className="page-wrapper">

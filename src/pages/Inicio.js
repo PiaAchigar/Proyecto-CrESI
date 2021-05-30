@@ -10,9 +10,16 @@ import QueDicen from "../components/QueDicen/QueDicen";
 import Apoyo from "../components/Apoyo/Apoyo";
 
 const Inicio = () => {
+  //GO TOP
   useEffect(() => {
-    console.log("pagina inicio");
+    setTimeout(() => {
+      window.scroll({
+        top: 0,
+        left: 0,
+      });
+    }, 250);
   }, []);
+
   return (
     <div className="page-wrapper">
       <BubbleContainer content={<AprendeJugando />}>
@@ -27,7 +34,7 @@ const Inicio = () => {
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
       <BubbleContainer content={<QueDicen />}>
-        <Bubble height="25vw" top="-10%" right="10%" amarillo />
+        <Bubble height="15vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
       <BubbleContainer content={<Apoyo />}>
         <Bubble height="7vw" top="-20%" right="35%" celeste />
