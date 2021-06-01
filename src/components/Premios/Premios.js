@@ -1,5 +1,8 @@
 import React from "react";
 
+//HOOK
+// import useIntersection from "../../hooks/useIntersection";
+
 //images
 import imgPrincipal from "../../assets/img/premios-bg.jpg";
 import impulso from "../../assets/img/premios-impulso.jpg";
@@ -15,14 +18,7 @@ import CardPremios from "../CardPremios/CardPremios";
 import "./Premios.scss";
 
 const Premios = () => {
-  // //CARD QUE VA A ESTAR SIEMPRE AL MEDIO EN MOBILE, EN ESTA CASO LA 3ra, SON 7 CARDS
-  // //SOLO SIRVE HASTA 768px PERO SIRVE :D
-  // const slider = useRef();
-  // useEffect(() => {
-  //   const CardNumber3 = slider.current.children[3];
-  //   CardNumber3.scrollIntoView();
-  // }, []);
-  //////////////////////////////////////////////////////////////////////////////////
+  //
 
   return (
     <div className="premios" id="premios">

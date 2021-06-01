@@ -1,0 +1,22 @@
+@use '../../sass/colors';
+.related-products {
+  padding-top: 1rem;
+  border-top: solid 1px colors.$gris-oscuro;
+  h2 {
+    color: colors.$gris-oscuro;
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    @media (min-width: 768px) {
+      padding: 1rem 2rem;
+    }
+  }
+}

@@ -37,7 +37,9 @@ const Header = () => {
     let windowWidth = window.innerWidth;
 
     if (windowWidth >= 768) {
-      if (scrollYoffset >= 350) {
+
+      if (scrollYoffset >= 150) {
+
         headerRef.current.style.top = "-2.5rem";
       } else {
         headerRef.current.style.top = "0";
@@ -49,8 +51,12 @@ const Header = () => {
     <div className="header-wrapper" ref={headerRef}>
       <div className="top-header">
         <div className="top_header__mailto">
-          <HiOutlineMail className="mail-icon" />
-          <Mailto>appcresi@gmail.com</Mailto>
+          <Mailto>
+            <HiOutlineMail className="mail-icon" />
+          </Mailto>
+          <Mailto>
+            <p style={{ color: "#707070" }}>appcresi@gmail.com</p>
+          </Mailto>
         </div>
         <div className="vertical-line"></div>
         <div className="top-header__socials">
