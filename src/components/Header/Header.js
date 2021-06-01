@@ -37,7 +37,9 @@ const Header = () => {
     let windowWidth = window.innerWidth;
 
     if (windowWidth >= 768) {
+
       if (scrollYoffset >= 150) {
+
         headerRef.current.style.top = "-2.5rem";
       } else {
         headerRef.current.style.top = "0";

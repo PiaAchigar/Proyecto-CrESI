@@ -49,9 +49,6 @@ const Footer = () => {
                 <li>
                   <a href="/#prensa-testimonios">Prensa</a>
                 </li>
-                <li>
-                  <a href="/#prensa-testimonios">Testimonios</a>
-                </li>
               </ul>
             </div>
             <div className="links">
@@ -94,27 +91,47 @@ const Footer = () => {
           <div className="redes">
             <ul>
               <li>
-                <a href="www.google.com">
-                  <FaFacebookSquare size="2rem" />
+                <a
+                  href="https://www.facebook.com/appcresi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebookSquare className="social-icon" size="2rem" />
                 </a>{" "}
               </li>
               <li>
-                <a href="www.google.com">
+                <a
+                  href="https://www.instagram.com/appcresi/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaInstagramSquare size="2rem" />
                 </a>
               </li>
               <li>
-                <a href="www.google.com">
+                <a
+                  href="https://twitter.com/appCrESI"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaTwitter size="2rem" />
                 </a>
               </li>
               <li>
-                <a href="www.google.com">
+                <a
+                  href="https://www.linkedin.com/company/appcresi/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedin size="2rem" />
                 </a>
               </li>
               <li>
-                <a href="www.google.com">
+                <a
+                  href="https://www.youtube.com/channel/UCXxbxxBrPSbY4akDfj3VcIA/videos"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaYoutube size="2rem" />
                 </a>
               </li>
@@ -124,6 +141,7 @@ const Footer = () => {
           <hr />
           <div className="copyright">
             <p>
+              {/* Copyright © 2021 CrESI ® */}
               Copyright CrESI | Powered by <a href="link">CrESI&reg;</a>{" "}
             </p>
           </div>
