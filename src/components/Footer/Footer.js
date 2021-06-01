@@ -73,12 +73,13 @@ const Footer = () => {
         <div className="suscripcion-donacion">
           <div className="suscripcion">
             <h1>SUSCRIBITE</h1>
-            <div className="divWrap">
+            <InvitameCafecitoBtn txtColor="#8fa2cc" bgColor="#fff" />
+            {/* <div className="divWrap">
               <input type="text" placeholder="tumail@ejemplo.com" />
               <div className="logoSend">
                 <FiSend />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="donacion">
             <h1>DONACIONES</h1>
