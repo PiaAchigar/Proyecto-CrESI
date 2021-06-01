@@ -27,7 +27,7 @@ const Inicio = () => {
         <Bubble height="25vw" top="-10%" right="10%" amarillo />
       </BubbleContainer>
       <BubbleContainer content={<QueDicen />}>
-        <Bubble height="25vw" top="-10%" right="10%" amarillo />
+        <Bubble height="10vw" top="-10%" right="80%" violeta />
       </BubbleContainer>
       <BubbleContainer content={<Apoyo />}>
         <Bubble height="7vw" top="-20%" right="35%" celeste />
