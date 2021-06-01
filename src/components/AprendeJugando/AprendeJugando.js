@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Componentes
 import HeroSwitcher from "../HeroSwitcher/HeroSwitcher";
@@ -33,9 +34,7 @@ const AprendeJugando = () => {
           </a>
         </div>
         <div className="play-online-btn">
-          <a href="" target="_blank" rel="noreferrer">
-            ¡Jugar Online!
-          </a>
+          <Link to="/play-online">¡Jugar Online!</Link>
         </div>
 
         <div className="hero-switcher-mobile">

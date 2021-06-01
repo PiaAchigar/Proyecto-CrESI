@@ -12,7 +12,7 @@ import Carrito from "./pages/Carrito";
 import DetalleProducto from "./pages/DetalleProducto";
 
 //Componentes
-//Estos tres componentes se encuentran fuera de todas los componentes paginas ya que ellos estan siempre en todas las vistas.
+//Estos tres componentes se encuentran fuera de el SWITCH ya que ellos estan siempre en todas las vista.
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
