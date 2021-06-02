@@ -1,0 +1,24 @@
+@use "../../sass/colors";
+@use "../../sass/fonts";
+
+.politicas {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  font-family: fonts.$font-family;
+  h1 {
+    color: colors.$gris-medio;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  section {
+    color: colors.$negro;
+    h2 {
+      font-size: 1.9rem;
+      margin: 1rem 0;
+    }
+  }
+}

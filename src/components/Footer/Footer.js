@@ -144,7 +144,8 @@ const Footer = () => {
           <hr />
           <div className="copyright">
             <p>
-              Copyright &copy; 2021 <a href="link">CrESI&reg;</a>{" "}
+              Copyright &copy; 2021 <a href="link">CrESI&reg;.</a> Todos los
+              derechos reservados.
             </p>
           </div>
         </div>
