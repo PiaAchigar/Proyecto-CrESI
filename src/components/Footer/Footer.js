@@ -31,7 +31,9 @@ const Footer = () => {
               <source media="(min-width: 768px)" srcSet={logoheader} />
               <img src={logocompleto} alt="Logo Cresi" />
             </picture>
-            <p>Politicas de privacidad</p>
+            <Link to="/politicas">
+              <p>Politicas de privacidad</p>
+            </Link>
           </div>
           <hr />
           <div className="nosotros-links">
@@ -142,8 +144,8 @@ const Footer = () => {
           <hr />
           <div className="copyright">
             <p>
-              {/* Copyright © 2021 CrESI ® */}
-              Copyright CrESI | Powered by <a href="link">CrESI&reg;</a>{" "}
+              Copyright &copy; 2021 <a href="link">CrESI&reg;.</a> Todos los
+              derechos reservados.
             </p>
           </div>
         </div>
