@@ -19,9 +19,19 @@ const HeroSwitcher = () => {
   }, [hero]);
 
   return hero === "mobile" ? (
-    <img className="hero-img" src={heroapp} alt="Mobile  with cresi app open" height="300px" />
+    <img
+      className="hero-img"
+      src={heroapp}
+      alt="Mobile  with cresi app open"
+      height="300px"
+    />
   ) : (
-    <img className="hero-img" src={heroweb} alt="Laptop with cresi web open" height="300px" />
+    <img
+      className="hero-img"
+      src={heroweb}
+      alt="Laptop with cresi web open"
+      height="300px"
+    />
   );
 };
 

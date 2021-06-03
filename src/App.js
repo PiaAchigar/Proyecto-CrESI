@@ -21,22 +21,27 @@ import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 //Ruteador
 import { Switch, Route } from "react-router-dom";
 
+//Context
+import { CartProvider } from "./context/cartContext";
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Switch>
-        <Route path="/" exact component={Inicio} />
-        <Route path="/recursos" component={Recursos} />
-        <Route path="/visitas" component={Visitas} />
-        <Route path="/contacto" component={Contacto} />
-        <Route path="/tienda" component={Tienda} exact />
-        <Route path="/tienda/:id" component={DetalleProducto} exact />
-        <Route path="/carrito" component={Carrito} />
-        <Route path="/politicas" component={Politica} />
-      </Switch>
-      <WhatsappFloat />
-      <Footer />
+      <CartProvider>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Inicio} />
+          <Route path="/recursos" component={Recursos} />
+          <Route path="/visitas" component={Visitas} />
+          <Route path="/contacto" component={Contacto} />
+          <Route path="/tienda" component={Tienda} exact />
+          <Route path="/tienda/:id" component={DetalleProducto} exact />
+          <Route path="/carrito" component={Carrito} />
+          <Route path="/politicas" component={Politica} />
+        </Switch>
+        <WhatsappFloat />
+        <Footer />
+      </CartProvider>
     </div>
   );
 }

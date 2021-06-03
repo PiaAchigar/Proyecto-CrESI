@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
-
+import React, { useEffect, useContext } from "react";
+//Context
+import { CartContext } from "../context/cartContext";
+import CarritoProds from "../components/CarritoProds/CarritoProds";
 import CarritoVacio from "../components/CarritoVacio/CarritoVacio";
 
 const Carrito = () => {
@@ -13,9 +15,11 @@ const Carrito = () => {
     }, 250);
   }, []);
 
+  const { cart } = useContext(CartContext);
+
   return (
     <div className="page-wrapper">
-      <CarritoVacio />
+      {cart.length > 0 ? <CarritoProds cart={cart} /> : <CarritoVacio />}
     </div>
   );
 };

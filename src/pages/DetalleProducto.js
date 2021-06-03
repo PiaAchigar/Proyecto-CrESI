@@ -44,7 +44,7 @@ const DetalleProducto = () => {
         description={product[0].description.main}
         temario={product[0].description.temario}
         duration={product[0].description.duration}
-        imgName={product[0].imgName}
+        img={product[0].img}
       />
 
       <RelatedProducts related={related} />
