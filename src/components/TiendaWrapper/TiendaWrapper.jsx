@@ -14,8 +14,10 @@ import filtro_simple from "../../assets/img/tienda-filtrosimple.jpg";
 import filtro_vf from "../../assets/img/tienda-filtrovf.jpg";
 import cresi_game from "../../assets/img/tienda-juego.jpeg";
 import abp from "../../assets/img/tienda-pdf.jpg";
-
+//CSS
 import "./TiendaWrapper.scss";
+// ------ ARRAY DE PRODUCTOS ------ //
+import infoProductos from "../../assets/tienda-productos-info";
 
 const TiendaWrapper = () => {
   return (
@@ -23,76 +25,16 @@ const TiendaWrapper = () => {
       <h1>Tienda</h1>
       <h2>Acá vas a encontrar diversos cursos, juegos y recursos de CrESI.</h2>
       <div className="products-container">
-        <CardTienda
-          img={abp}
-          alt="pdf logo"
-          texto="ABP Recurso Digital"
-          valor="$100"
-          id="abp-recurso-digital"
-        />
-        <CardTienda
-          img={cresi_game}
-          alt="juego de mesa cresi"
-          texto="CrESI Game"
-          valor="$500"
-          id="cresi-game"
-        />
-        <CardTienda
-          img={curso_abp}
-          alt="curso abp aprendizaje basado en proyectos"
-          texto="Curso 'ABP - Aprendizaje basado en Proyectos'"
-          valor="$500"
-          id="curso-abp-proyectos"
-        />
-        <CardTienda
-          img={curso_classroom_cero}
-          alt="curso classroom desde cero"
-          texto="Curso 'Classroom desde Cero'"
-          valor="$200"
-          id="curso-classroom-cero"
-        />
-        <CardTienda
-          img={curso_classroom}
-          alt="curso classroom"
-          texto="Curso Classroom"
-          valor="$5000"
-          id="curso-classroom"
-        />
-        <CardTienda
-          img={curso_app}
-          alt="Mi primera app"
-          texto="Curso 'Mi primera app'"
-          valor="$500"
-          id="curso-app"
-        />
-        <CardTienda
-          img={filtro_azar}
-          alt="filtro al azar"
-          texto="Filtro imagen al azar"
-          valor="$1000"
-          id="filtro-azar"
-        />
-        <CardTienda
-          img={filtro_simple}
-          alt="filtro simple"
-          texto="Filtro simple"
-          valor="$500"
-          id="filtro-simple"
-        />
-        <CardTienda
-          img={filtro_vf}
-          alt="filtro verdadero o falso"
-          texto="Filtro Verdadero o Falso para Instagram/Facebook"
-          valor="$1500"
-          id="filtro-vf"
-        />
-        <CardTienda
-          img={cafecito}
-          alt="ilustracion vaso de cafe"
-          texto="lorem ipsum dolor"
-          valor="$50"
-          id="cafecito"
-        />
+        {infoProductos.map((prod, key) => (
+          <CardTienda
+            img={prod.img}
+            alt=""
+            texto={prod.name}
+            valor={prod.price}
+            id={prod.id}
+            key={key}
+          />
+        ))}
       </div>
       <div className="wrapper">
         <h3>

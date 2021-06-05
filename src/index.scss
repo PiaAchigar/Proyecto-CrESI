@@ -1,5 +1,5 @@
 /*  */
-/* Normalizador del css del UserAgent de los navegadores  */
+/* Normalizador del css del UserAgent de los navegadores  | RESET CSS  */
 /*  */
 
 * {
@@ -10,6 +10,13 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+//Evitar fondo celeste al tocar pantalla en android
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+/*  */
+/* Fin normalizador | RESET CSS  */
+/*  */
 @import "./sass/animations.scss";
 
 .App {

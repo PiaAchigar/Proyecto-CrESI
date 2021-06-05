@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+//Context
+import { CartContext } from "../../context/cartContext";
+//Componentes
+import ItemRow from "../ItemRow/ItemRow";
+//CSS
+import "./CarritoProds.scss";
 
+//Este es el carro cuando hay productos agregados
 const CarritoProds = ({ cart }) => {
-  console.log(cart);
+  const { cartTotalItems } = useContext(CartContext);
+  const [totalItems, setTotalItems] = useState("");
+
+  useEffect(() => {
+    setTotalItems(cartTotalItems);
+  }, []);
+
   return (
-    <div style={{ display: "flex" }}>
-      {cart.map((item, key) => (
+    <div className="carrito-prods">
+      <h1>Carrito({totalItems})</h1>
+      <hr />
+      {cart.map(({ name, id, price, quantity, img }, key) => (
         <div key={key}>
-          <p>{item.name}</p>
-          <p>{item.id}</p>
-          <p>{item.price}</p>
-          <p>{item.quantity}</p>
-          <img style={{ maxWidth: "250px" }} src={item.img} alt="" />
+          <ItemRow
+            name={name}
+            price={price}
+            quantity={quantity}
+            img={img}
+            id={id}
+          />
         </div>
       ))}
     </div>

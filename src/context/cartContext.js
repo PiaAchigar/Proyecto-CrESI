@@ -58,6 +58,11 @@ export const CartProvider = ({ children }) => {
     return cart.some((product) => product.id === productID);
   };
 
+  // Cantidad de items en el carrito
+  const cartTotalItems = cart
+    .map((item) => item.quantity)
+    .reduce((a, b) => a + b, 0);
+
   return (
     <CartContext.Provider
       value={{
@@ -68,6 +73,7 @@ export const CartProvider = ({ children }) => {
         setTotalItems,
         itemsInLocal,
         isInCart,
+        cartTotalItems,
       }}
     >
       {children}

@@ -13,7 +13,7 @@ const CardTienda = ({ img, alt, texto, valor, id }) => {
       <div className="card-botomm">
         <p className="p-top">{texto}</p>
         <hr />
-        <p className="p-botomm">{valor}</p>
+        <p className="p-botomm">${valor}</p>
       </div>
     </Link>
   );

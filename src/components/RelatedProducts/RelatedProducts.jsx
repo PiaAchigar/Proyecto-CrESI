@@ -13,7 +13,7 @@ const RelatedProducts = ({ related }) => {
           related.map((prod, key) => (
             <CardTienda
               img={prod[0]?.img}
-              alt="asd"
+              alt=""
               texto={prod[0]?.name}
               valor={prod[0]?.price}
               id={prod[0]?.id}

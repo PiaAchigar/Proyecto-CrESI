@@ -1,0 +1,13 @@
+@use '../../sass/colors';
+
+.carrito-prods {
+  width: 85vw;
+  margin: 3rem auto;
+  box-shadow: 0 2px 5px 1px colors.$gris-medio;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 70vh;
+
+  h1 {
+  }
+}

@@ -200,7 +200,7 @@ const productsInfo = [
   },
   {
     id: "filtro-vf",
-    name: "Filtro Verdadero Falso para Instagram/Facebook",
+    name: "Filtro Verdadero Falso",
     price: 1500,
     description: {
       main: "Tiempo de desarrollo: Entre 2 a 3 días. Contenido: No incluye contenido. Debe ser aportado por el cliente. No se pueden publicar marcas y ciertos contenido restringidos. Tiempo de publicación en redes sociales: De 1 día a una semana dependiendo de la aprobación del filtro.",

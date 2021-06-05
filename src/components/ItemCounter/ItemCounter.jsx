@@ -8,7 +8,7 @@ import { CartContext } from "../../context/cartContext";
 const ItemCounter = ({ item }) => {
   const [counter, setCounter] = useState(1);
   const { id } = useParams();
-  const { cart, setCart, addToCart, isInCart } = useContext(CartContext);
+  const { addToCart, isInCart } = useContext(CartContext);
 
   //CAMBIA URL SE RESTAURA EL CONTADOR
   useEffect(() => {
