@@ -53,6 +53,34 @@ export const CartProvider = ({ children }) => {
       ]);
     }
   };
+
+  //Quitar o Agregar cantidad de un producto ya en carrito
+  const changeQty = (operator, id) => {
+    //Index de elemento a agregar o restar cantidad
+    const indexOfProduct = cart.findIndex((product) => product.id === id);
+    //Creo una copia del array de cart
+    let newArray = [...cart];
+
+    if (operator === "+") {
+      //Le agrego uno a la cantidad
+      newArray[indexOfProduct] = {
+        ...newArray[indexOfProduct],
+        quantity: newArray[indexOfProduct].quantity + 1,
+      };
+      setCart(newArray);
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    if (operator === "-") {
+      //Le agrego uno a la cantidad
+      newArray[indexOfProduct] = {
+        ...newArray[indexOfProduct],
+        quantity: newArray[indexOfProduct].quantity - 1,
+      };
+      setCart(newArray);
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  };
+
   // Devuelve True o False si el producto esta o no en el carrito
   const isInCart = (productID) => {
     return cart.some((product) => product.id === productID);
@@ -62,6 +90,13 @@ export const CartProvider = ({ children }) => {
   const cartTotalItems = cart
     .map((item) => item.quantity)
     .reduce((a, b) => a + b, 0);
+
+  //Borrar item segund id
+  const deleteItemById = (id) => {
+    const editedItems = cart.filter((product) => product.id !== id);
+    setCart(editedItems);
+    localStorage.setItem("cart", JSON.stringify(editedItems));
+  };
 
   return (
     <CartContext.Provider
@@ -74,6 +109,8 @@ export const CartProvider = ({ children }) => {
         itemsInLocal,
         isInCart,
         cartTotalItems,
+        deleteItemById,
+        changeQty,
       }}
     >
       {children}

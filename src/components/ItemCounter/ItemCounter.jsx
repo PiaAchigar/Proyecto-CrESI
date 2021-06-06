@@ -14,9 +14,6 @@ const ItemCounter = ({ item }) => {
   useEffect(() => {
     setCounter(1);
   }, [id]);
-  useEffect(() => {
-    console.log(isInCart(item.id));
-  }, []);
 
   const removeItem = () => setCounter(counter - 1);
   const addItem = () => setCounter(counter + 1);
