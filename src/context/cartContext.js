@@ -4,7 +4,6 @@ export const CartContext = createContext({});
 
 export const CartProvider = ({ children }) => {
   //
-  //
   //Busca la key cart en el LOCAL STORAGE, sino la encuentra inicializa un array vacio
   const itemsInLocal = () => {
     if (localStorage.getItem("cart") !== null) {
@@ -24,9 +23,8 @@ export const CartProvider = ({ children }) => {
 
   //   Agrega producto al carrito pasandole el obj con la info
   const addToCart = (obj) => {
-    // Primero busco si ya existe dentro del array del state Cart un objeto que tenga
-    // el mismo nombre que el que quiero agregar al carrito, si no existe ahi si lo agrego.
-    const duplicate = cart.find((product) => product.name === obj.name);
+    //Busco producto con el mismo nombre
+    const duplicate = cart.find((product) => product.id === obj.id);
 
     if (duplicate !== undefined) {
       const indexOfDuplicate = cart.findIndex(
@@ -60,9 +58,8 @@ export const CartProvider = ({ children }) => {
     const indexOfProduct = cart.findIndex((product) => product.id === id);
     //Creo una copia del array de cart
     let newArray = [...cart];
-
+    //Le agrego uno a la cantidad
     if (operator === "+") {
-      //Le agrego uno a la cantidad
       newArray[indexOfProduct] = {
         ...newArray[indexOfProduct],
         quantity: newArray[indexOfProduct].quantity + 1,
@@ -70,8 +67,8 @@ export const CartProvider = ({ children }) => {
       setCart(newArray);
       localStorage.setItem("cart", JSON.stringify(cart));
     }
+    //Le resto uno a la cantidad
     if (operator === "-") {
-      //Le agrego uno a la cantidad
       newArray[indexOfProduct] = {
         ...newArray[indexOfProduct],
         quantity: newArray[indexOfProduct].quantity - 1,
@@ -98,12 +95,18 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(editedItems));
   };
 
+  //Total $$ de carrito, suma total de todos los productos.
+  const cartTotal = cart
+    .map((item) => item.quantity * item.price)
+    .reduce((a, b) => a + b, 0);
+
   return (
     <CartContext.Provider
       value={{
         cart,
         setCart,
         addToCart,
+        cartTotal,
         totalItems,
         setTotalItems,
         itemsInLocal,

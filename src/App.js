@@ -11,6 +11,7 @@ import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
 import DetalleProducto from "./pages/DetalleProducto";
 import Politica from "./pages/Politica";
+import FormCompra from "./pages/FormCompra";
 
 //Componentes
 //Estos tres componentes se encuentran fuera de el SWITCH ya que ellos estan siempre en todas las vista.
@@ -37,6 +38,7 @@ function App() {
           <Route path="/tienda" component={Tienda} exact />
           <Route path="/tienda/:id" component={DetalleProducto} exact />
           <Route path="/carrito" component={Carrito} />
+          <Route path="/finalizar-compra" component={FormCompra} />
           <Route path="/politicas" component={Politica} />
         </Switch>
         <WhatsappFloat />

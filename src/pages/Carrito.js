@@ -4,6 +4,10 @@ import { CartContext } from "../context/cartContext";
 import CarritoProds from "../components/CarritoProds/CarritoProds";
 import CarritoVacio from "../components/CarritoVacio/CarritoVacio";
 
+//Components
+import Bubble from "../components/BubbleContainer/Bubble";
+import BubbleContainer from "../components/BubbleContainer/BubbleContainer";
+
 const Carrito = () => {
   //GO TOP
   useEffect(() => {
@@ -19,7 +23,15 @@ const Carrito = () => {
 
   return (
     <div className="page-wrapper">
-      {cart.length > 0 ? <CarritoProds cart={cart} /> : <CarritoVacio />}
+      <BubbleContainer
+        content={
+          cart.length > 0 ? <CarritoProds cart={cart} /> : <CarritoVacio />
+        }
+        hidden
+      >
+        <Bubble height="105px" top="0" left="0" violeta />
+        <Bubble height="55px" bottom="25%" right="25%" verde />
+      </BubbleContainer>
     </div>
   );
 };

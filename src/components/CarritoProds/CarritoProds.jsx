@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+
+import { Link } from "react-router-dom";
 //Context
 import { CartContext } from "../../context/cartContext";
 //Componentes
@@ -8,7 +10,7 @@ import "./CarritoProds.scss";
 
 //Este es el carro cuando hay productos agregados
 const CarritoProds = ({ cart }) => {
-  const { cartTotalItems } = useContext(CartContext);
+  const { cartTotalItems, cartTotal } = useContext(CartContext);
 
   return (
     <div className="carrito-prods">
@@ -25,6 +27,16 @@ const CarritoProds = ({ cart }) => {
           />
         </div>
       ))}
+      <div className="bottom-info">
+        <div className="total-carrito">
+          <p className="total-text">Total carrito</p>
+          <p className="total">${cartTotal}</p>
+        </div>
+
+        <button className="continue-buy-btn">
+          <Link to="/finalizar-compra">Continuar compra </Link>
+        </button>
+      </div>
     </div>
   );
 };
