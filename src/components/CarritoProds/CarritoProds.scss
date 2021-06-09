@@ -61,34 +61,15 @@
 
     .continue-buy-btn {
       align-self: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: colors.$verde;
-      color: colors.$blanco;
-      font-size: 1rem;
-      height: 2rem;
       width: 260px;
       max-width: 100%;
-      outline: none;
-      border: 0;
-      border-radius: 7px;
       margin-bottom: 2rem;
-      cursor: pointer;
-      transition: 0.2s ease-in-out all;
 
       @media (min-width: 768px) {
         align-self: flex-end;
       }
       @media (min-width: 1200px) {
         width: 300px;
-      }
-
-      &:hover {
-        transform: scale(1.1);
-      }
-      &:active {
-        transform: scale(0.9);
       }
     }
   }

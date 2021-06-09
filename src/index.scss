@@ -10,6 +10,10 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 //Evitar fondo celeste al tocar pantalla en android
 button {
   -webkit-tap-highlight-color: transparent;
@@ -34,6 +38,42 @@ button {
     -webkit-animation: appear 1s ease-in;
     animation: appear 1s ease-in;
     margin-top: 4.5rem;
+
+    .green-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2cbd9b;
+      border: solid 1px #2cbd9b;
+      height: 2rem;
+      width: 100%;
+      outline: none;
+      border: 0;
+      border-radius: 7px;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      transition: 0.1s ease-in-out all;
+
+      &:hover {
+        background-color: #fff;
+        border: solid 1px #2cbd9b;
+      }
+      &:hover > a {
+        color: #2cbd9b;
+      }
+      &:hover > p {
+        color: #2cbd9b;
+      }
+      a,
+      p {
+        color: #fff;
+        font-size: 16px;
+        height: 100%;
+        width: 100%;
+        line-height: 2rem;
+        text-align: center;
+      }
+    }
 
     @media (min-width: 768px) {
       margin-top: 7rem;

@@ -33,7 +33,7 @@ const CarritoProds = ({ cart }) => {
           <p className="total">${cartTotal}</p>
         </div>
 
-        <button className="continue-buy-btn">
+        <button className="green-btn continue-buy-btn">
           <Link to="/finalizar-compra">Continuar compra </Link>
         </button>
       </div>

@@ -45,31 +45,8 @@
       }
     }
 
-    .play-online-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .play-online {
       align-self: center;
-      background-color: colors.$verde;
-      height: 2rem;
-      width: 100%;
-      outline: none;
-      border: 0;
-      border-radius: 7px;
-      margin-bottom: 2rem;
-      cursor: pointer;
-      transition: 0.2s ease-in-out all;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-      &:active {
-        transform: scale(0.9);
-      }
-      a {
-        color: colors.$blanco;
-        font-size: 16px;
-      }
     }
 
     //Hero para mobile
@@ -115,7 +92,7 @@
         width: 90%;
         margin-bottom: 1rem;
       }
-      .play-online-btn {
+      .play-online {
         order: 4;
         align-self: flex-start;
         width: 90%;
@@ -157,7 +134,7 @@
       .jugando__info {
         max-width: 75%;
       }
-      .play-online-btn {
+      .play-online {
         max-width: 75%;
       }
       .jugando__stores {

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Apoyo.scss";
 import Mailto from "../Mailto";
 import logo_intive_blue from "../../assets/img/logo_intive_blue.png";
@@ -22,7 +24,9 @@ const Apoyo = () => {
             </b>
           </p>
           <div>
-            <button className="sumar-btn">Sumar mi empresa</button>
+            <button className="green-btn sumar-btn">
+              <Link to="/contacto">Sumar mi empresa</Link>
+            </button>
           </div>
           <p className="email">
             O escribinos a <Mailto>appcresi@gmail.com</Mailto>
