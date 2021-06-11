@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 //Components
 import TiendaItemDetail from "../components/TiendaItemDetail/TiendaItemDetail.jsx";
@@ -11,7 +11,7 @@ import infoProductos from "../assets/tienda-productos-info";
 const DetalleProducto = () => {
   //
   const { id } = useParams();
-  const [related, setRelated] = useState([]);
+  // const [related, setRelated] = useState([]);
 
   //Producto en particular a mostrar
   const product = infoProductos.filter((e) => e.id === id);
@@ -32,10 +32,6 @@ const DetalleProducto = () => {
     }, 250);
   }, [id]);
 
-  useEffect(() => {
-    setRelated(relatedProducts);
-  }, [id]);
-
   return (
     <div className="page-wrapper">
       <TiendaItemDetail
@@ -44,10 +40,10 @@ const DetalleProducto = () => {
         description={product[0].description.main}
         temario={product[0].description.temario}
         duration={product[0].description.duration}
-        imgName={product[0].imgName}
+        img={product[0].img}
       />
 
-      <RelatedProducts related={related} />
+      <RelatedProducts related={relatedProducts()} />
     </div>
   );
 };

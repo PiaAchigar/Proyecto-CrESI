@@ -33,7 +33,7 @@ const AprendeJugando = () => {
             <img src={appStore} alt="apple store" />
           </a>
         </div>
-        <div className="play-online-btn">
+        <div className="green-btn play-online">
           <Link to="/play-online">¡Jugar Online!</Link>
         </div>
 

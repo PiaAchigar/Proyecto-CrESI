@@ -13,11 +13,18 @@ const TiendaItemDetail = ({
   description,
   temario,
   duration,
-  imgName,
+  img,
   imgAlt,
 }) => {
   const { id } = useParams();
   const [logo, setLogo] = useState(false);
+
+  const itemInfo = {
+    name,
+    price,
+    img,
+    id,
+  };
 
   useEffect(() => {
     //SI NO EXISTE NI TEMARIO NI DURACION RETORNO EL LOGO CRESI PARA QUE NO QUEDE UN ESPACIO EN BLANCO (SOLO PARA DESKTOP)
@@ -31,15 +38,16 @@ const TiendaItemDetail = ({
   return (
     <div className="item-detail">
       <div className="img-wrapper">
-        <img src={imgName} alt={imgAlt} />
+        <img src={img} alt={imgAlt} />
       </div>
       <div className="item-info">
         <h1 className="item-detail__title">{name}</h1>
         <p className="item-detail__price">${price}</p>
-        <div className="ItemCounter-wrapper">
-          <ItemCounter />
-        </div>
+
         <p className="item-detail__description">{description}</p>
+        <div className="ItemCounter-wrapper">
+          <ItemCounter item={itemInfo} />
+        </div>
       </div>
       <div className="wrapper">
         {logo && (

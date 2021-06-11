@@ -38,25 +38,9 @@
       }
       .sumar-btn {
         align-self: center;
-        align-items: center;
-        border: none;
-        border-radius: 10px;
         width: 260px;
-        padding: 0.5rem;
-        color: white;
-        background-color: colors.$verde;
-        font-size: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-        &:active {
-          transform: scale(0.9);
-        }
       }
     }
   }
@@ -97,10 +81,8 @@
               width: 100%;
             }
           }
-          div {
-            button {
-              width: 300px;
-            }
+          .sumar-btn {
+            width: 300px;
           }
         }
       }

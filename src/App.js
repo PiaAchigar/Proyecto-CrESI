@@ -11,6 +11,7 @@ import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
 import DetalleProducto from "./pages/DetalleProducto";
 import Politica from "./pages/Politica";
+import FinalizarCompra from "./pages/FinalizarCompra";
 
 //Componentes
 //Estos tres componentes se encuentran fuera de el SWITCH ya que ellos estan siempre en todas las vista.
@@ -21,22 +22,28 @@ import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 //Ruteador
 import { Switch, Route } from "react-router-dom";
 
+//Context
+import { CartProvider } from "./context/cartContext";
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Switch>
-        <Route path="/" exact component={Inicio} />
-        <Route path="/recursos" component={Recursos} />
-        <Route path="/visitas" component={Visitas} />
-        <Route path="/contacto" component={Contacto} />
-        <Route path="/tienda" component={Tienda} exact />
-        <Route path="/tienda/:id" component={DetalleProducto} exact />
-        <Route path="/carrito" component={Carrito} />
-        <Route path="/politicas" component={Politica} />
-      </Switch>
-      <WhatsappFloat />
-      <Footer />
+      <CartProvider>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Inicio} />
+          <Route path="/recursos" component={Recursos} />
+          <Route path="/visitas" component={Visitas} />
+          <Route path="/contacto" component={Contacto} />
+          <Route path="/tienda" component={Tienda} exact />
+          <Route path="/tienda/:id" component={DetalleProducto} exact />
+          <Route path="/carrito" component={Carrito} />
+          <Route path="/finalizar-compra" component={FinalizarCompra} />
+          <Route path="/politicas" component={Politica} />
+        </Switch>
+        <WhatsappFloat />
+        <Footer />
+      </CartProvider>
     </div>
   );
 }

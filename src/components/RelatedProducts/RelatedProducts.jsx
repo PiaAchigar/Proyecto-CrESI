@@ -12,8 +12,8 @@ const RelatedProducts = ({ related }) => {
         {related !== [] &&
           related.map((prod, key) => (
             <CardTienda
-              img={prod[0]?.imgName}
-              alt="asd"
+              img={prod[0]?.img}
+              alt=""
               texto={prod[0]?.name}
               valor={prod[0]?.price}
               id={prod[0]?.id}

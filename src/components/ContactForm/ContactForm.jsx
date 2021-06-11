@@ -55,7 +55,6 @@ const ContactForm = () => {
         msg.msg_code === "SM002" && setResponse(true);
       })
       .catch((error) => {
-        console.log("error de catch: " + error);
         alert("Ha ocurrido un enviar al enviar tu mensaje, intenta nuevamente");
         window.location.reload();
       });
