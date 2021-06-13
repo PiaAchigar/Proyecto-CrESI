@@ -11,7 +11,7 @@ import recursosDidacticos from "../../assets/img/recursos-didacticos.png";
 import recursosIlustracion from "../../assets/img/recursos-ilustracion.png";
 
 const objetivo1 = {
-  titulo: "Las ITS (infecciones de transimisión sexual)",
+  titulo: "Las ITS (infecciones de transmisión sexual)",
   objetivo:
     "Que el joven conozca las Infecciones de Transmisión Sexual y su forma de prevención",
   informacion:
@@ -75,17 +75,17 @@ const RecursosComponente = () => {
 
           <p className="p-chico-tablet">
             <span className="h1-recursos-desktop">Sumemos contenidos</span>
-            Una de las caractiristas mas importantes de CrESI es que{" "}
+            Una de las caracteristicas mas importantes de CrESI es que{" "}
             <b>
-              una vez que se descarga puede ser usada sin conexion a internet.
+              una vez que se descarga puede ser usada sin conexión a internet.
             </b>
             Esta cualidad hace que pueda ser usada en todas las escuelas como
-            recurso didactico para trabajar la Educacion Sexual Integral.
+            recurso didáctico para trabajar la Educación Sexual Integral.
             <br />
             <br />
             <b>
-              Puede ser utilizada tanto al comienzo de una clase como actividad
-              exploratoria para ver qué sabe y qué no los alumnos, o para
+              Puede ser utilizada al comienzo de una clase como actividad
+              exploratoria para ver qué saben y qué no los alumnos, o para
               evaluar los contenidos.
             </b>
             En esta sección te presentamos una serie de talleres que te servirán

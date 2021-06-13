@@ -37,9 +37,7 @@ const Header = () => {
     let windowWidth = window.innerWidth;
 
     if (windowWidth >= 768) {
-
       if (scrollYoffset >= 150) {
-
         headerRef.current.style.top = "-2.5rem";
       } else {
         headerRef.current.style.top = "0";
@@ -99,10 +97,7 @@ const Header = () => {
       </div>
       <header className="header">
         <NavLink to="/" className="logo">
-          <picture>
-            <source media="(min-width: 768px)" srcSet={logoheader} />
-            <img src={logocompleto} alt="Logo Cresi" />
-          </picture>
+          <img src={logoheader} alt="Logo Cresi" />
           <h1>CrESI</h1>
         </NavLink>
         <nav className="main-links">
@@ -124,6 +119,7 @@ const Header = () => {
           </ul>
         </nav>
 
+        {/* Menu mobile */}
         {nav ? (
           <>
             <div className="bg-close" onClick={handleNav}></div>
@@ -228,6 +224,8 @@ const Header = () => {
         ) : (
           <MdMenu onClick={handleNav} className="sidenav__open" size="2rem" />
         )}
+        {/* Fin Menu mobile */}
+
         <div className="right-links">
           <NavLink className="button-tienda" to="/tienda">
             Tienda

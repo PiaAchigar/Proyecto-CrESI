@@ -17,11 +17,12 @@ const ContactForm = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [mailSend, setMailSend] = useState(false);
   const captchaRef = useRef(null);
   const checkRef = useRef(null);
   const textareaRef = useRef(null);
 
-  const emailEndpoint = "https://cresi-api-rest-desarrollo.herokuapp.com/mail";
+  const emailEndpoint = process.env.REACT_APP_MAIL_ENDPOINT;
 
   const handleCaptcha = () => {
     if (captchaRef.current.getValue()) {
@@ -30,6 +31,8 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    //Cambio esta variable para cambiar el texto dentro del boton de enviar
+    setMailSend(true);
 
     const quiereRecibirMail = checkRef.current.checked;
     const messageTrimmed = mensaje.trim();
@@ -41,7 +44,7 @@ const ContactForm = () => {
       message: messageTrimmed,
       notice: quiereRecibirMail,
     };
-
+    //Envio el formulario
     fetch(emailEndpoint, {
       method: "POST",
       headers: {
@@ -110,8 +113,8 @@ const ContactForm = () => {
           onChange={handleCaptcha}
         />
       ) : (
-        <button className="submit-btn" type="submit">
-          Enviar mensaje
+        <button className="submit-btn" type="submit" disabled={mailSend}>
+          {mailSend ? "...enviando" : "Enviar mensaje"}
         </button>
       )}
     </form>

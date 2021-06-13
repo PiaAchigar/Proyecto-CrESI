@@ -10,52 +10,49 @@ import visitas_ilustracion from "../../assets/img/visitas-ilustracion.png";
 const ContenidoVisitas = () => {
   return (
     <div className="talleres-visitas-container">
-      <section className="talleres">
-        <h1>Talleres en las aulas</h1>
-        <article className="article-talleres">
-          <p className="con-los-jovenes">
-            Con los jovenes de CrESI{" "}
-            <b>
+      <h1 className="visitas-title">Talleres en las aulas</h1>
+      <div className="talleres">
+        <div className="intro-text">
+          <p>
+            Con los jóvenes de CrESI{" "}
+            <strong>
               no nos quedamos quietos y salimos a dar talleres en las escuelas.
-            </b>
-          </p>
-          <p className="con-los-jovenes">
+            </strong>{" "}
+            <br className="br-space" />
+            <br className="br-space" />
             Utilizando juegos y dinámicas vamos aprendiendo y contestando dudas.
             Además vamos ampliando nuestra base de datos para incorporar nuevas
             dudas a nuestra app.
           </p>
-          <div className="img-container">
-            <img src={porque_img} alt="porque_img" />
+        </div>
+
+        <div className="talleres__img-wrapper">
+          <img src={porque_img} alt="Chicos de Cresi dando charla en aula" />
+        </div>
+
+        <div className="explicacion-text">
+          <h2>¿Queres que visitemos tu escuela?</h2>
+          <p className="escribinos">
+            Escribinos a <Mailto>appcresi@gmail.com</Mailto>
+          </p>
+          <div className="como-son">
+            <h3>¿Cómo son los talleres?</h3>
+            <p>
+              Duran 2 horas y media, se realizan dinámicas y juegos.
+              Preferentemente para grupos de hasta 50 alumnos, desde 2do a 6to
+              año del secundario
+            </p>
           </div>
-          <div className="visitar-tu-escuela">
-            <h2>¿Queres que visitemos tu escuela?</h2>
-            <div className="inscribir-preguntas">
-              <div className="inscribite-aca-wrapper">
-                <div>
-                  <button>Inscribite haciendo click acá</button>
-                </div>
-                <p className="email">
-                  O escribinos a <Mailto>appcresi@gmail.com</Mailto>
-                </p>
-              </div>
-              <div className="preguntas">
-                <h3>¿Cómo son los talleres?</h3>
-                <p>
-                  Duran 2 horas y media, se realizan dinámicas y juegos.
-                  Preferentemente para grupos de hasta 50 alumnos, desde 2do a
-                  6to año del secundario.
-                </p>
-                <h3>Costo del taller:</h3>
-                <p>
-                  El taller tiene un costo de $50 por estudiante (No
-                  excluyente). Con el mismo costeamos gasto de traslado,
-                  materiales y viandas del grupo.
-                </p>
-              </div>
-            </div>
+          <div className="costos">
+            <h3>Costo del taller :</h3>
+            <p>
+              El taller tiene un costo de $50 por estudiante (No excluyente).
+              Con el mismo costeamos gastos de traslado, materiales y viandas
+              del equipo.
+            </p>
           </div>
-        </article>
-      </section>
+        </div>
+      </div>
       <section className="visitas">
         <h1>Estas son las escuelas y hogares que visitamos:</h1>
         <article className="article-visitas">

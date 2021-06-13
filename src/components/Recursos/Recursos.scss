@@ -1,12 +1,12 @@
 @use "../../sass/colors";
 
 .a-mail {
-  color: #4887DF;
+  color: #4887df;
   ::after {
-    color: #4887DF;
+    color: #4887df;
   }
   ::before {
-    color: #4887DF;
+    color: #4887df;
   }
 }
 
@@ -46,7 +46,7 @@
     width: 85%;
   }
   .p-chico {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .p-grande {
     font-weight: 500;
@@ -72,7 +72,7 @@
     width: 85%;
   }
   .p-chico {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .p-grande {
     font-weight: 500;
@@ -80,8 +80,7 @@
   }
 }
 
-
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   body {
     margin: 0 auto;
   }
@@ -99,47 +98,46 @@
   }
 
   .recursos-tablet {
-  margin-top: 3rem;
-  text-align: center;
-  background: transparent;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-
-  h1 {
-    color: colors.$gris-medio;
-  }
-  .h1-recursos-tablet {
-    order: -1;
-    align-self: center;
-    color: colors.$gris-medio;
-    margin-top: 2rem;
-    margin-left: 370px;
-  }
-  p {
-    order: 1;
-    width: 40%;
-    margin: 2rem;
-    text-align: justify;
-    padding-top: 25px;
-
-  }
-  .imagen-recursos-tablet {
-    align-self: flex-start;
-    width: 50%;
-  }
-  .p-chico2 {
-    width: 40%;
-    font-size: .9rem;
-  }
-  .p-grande {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .img-texto {
+    margin-top: 3rem;
+    text-align: center;
+    background: transparent;
     display: flex;
-    margin-bottom: 2rem;
-  }
+    flex: 1;
+    flex-direction: column;
+
+    h1 {
+      color: colors.$gris-medio;
+    }
+    .h1-recursos-tablet {
+      order: -1;
+      align-self: center;
+      color: colors.$gris-medio;
+      margin-top: 2rem;
+      margin-left: 370px;
+    }
+    p {
+      order: 1;
+      width: 40%;
+      margin: 2rem;
+      text-align: justify;
+      padding-top: 25px;
+    }
+    .imagen-recursos-tablet {
+      align-self: flex-start;
+      width: 50%;
+    }
+    .p-chico2 {
+      width: 40%;
+      font-size: 0.9rem;
+    }
+    .p-grande {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .img-texto {
+      display: flex;
+      margin-bottom: 2rem;
+    }
   }
 
   .recursos-tablet-final {
@@ -147,21 +145,21 @@
     background: transparent;
     display: flex;
     margin: 3rem;
-  
+
     h1 {
       color: colors.$gris-medio;
       margin: 2rem;
     }
-  
+
     p {
       text-align: justify;
     }
-  
+
     img {
       width: 50%;
     }
     .p-chico {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
     .p-grande {
       padding: 1rem;
@@ -169,13 +167,9 @@
       font-size: 1.1rem;
     }
   }
-  
-
-  
 }
 
-@media only screen and (min-width:1366px) {
-
+@media only screen and (min-width: 1366px) {
   .h1-recursos {
     display: none;
   }
@@ -190,7 +184,6 @@
     font-weight: 600;
     margin-bottom: 3rem;
     color: colors.$gris-medio;
-
   }
 
   .recursos {
@@ -203,71 +196,71 @@
 
   .recursos-tablet {
     margin: 0 auto;
-  text-align: center;
-  background: transparent;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-
-  h1 {
-    color: colors.$gris-medio;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    font-size: 3rem;
-  }
-
-  .h1-recursos-tablet {
-    order: -1;
-    align-self: flex-end;
-    color: colors.$gris-medio;
-    margin: 2rem;
-  }
-  p {
-    order: 1;
-    width: 40%;
-    margin: 2rem;
-    text-align: justify;
-  }
-  .imagen-recursos-tablet {
-    max-width: 500px;
-    align-self: flex-start;
-    width: 50%;
-  }
-  .p-chico2 {
-    width: 40%;
-    font-size: .9rem;
-  }
-  .p-grande {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .img-texto {
+    text-align: center;
+    background: transparent;
     display: flex;
-    margin-top: 6rem;
+    flex: 1;
+    flex-direction: column;
 
-  }
+    h1 {
+      color: colors.$gris-medio;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    .h1-recursos-tablet {
+      order: -1;
+      align-self: flex-end;
+      color: colors.$gris-medio;
+      margin: 2rem;
+    }
+    p {
+      order: 1;
+      width: 40%;
+      margin: 2rem;
+      text-align: justify;
+    }
+    .imagen-recursos-tablet {
+      max-width: 500px;
+      align-self: flex-start;
+      width: 50%;
+    }
+    .p-chico2 {
+      width: 40%;
+      font-size: 0.9rem;
+    }
+    .p-grande {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .img-texto {
+      display: flex;
+      margin-top: 6rem;
+    }
   }
 
   .recursos-tablet-final {
     text-align: center;
     background: transparent;
     display: flex;
-    margin: 3rem;
-  
+    margin: 3rem auto;
+    max-width: 1166px;
+
     h1 {
       color: colors.$gris-medio;
       margin: 2rem;
     }
-  
+
     p {
       text-align: justify;
     }
-  
+
     img {
       width: 50%;
     }
     .p-chico {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
     .p-grande {
       align-self: center;
@@ -276,8 +269,4 @@
       font-size: 1.1rem;
     }
   }
-  
-
-  
 }
-

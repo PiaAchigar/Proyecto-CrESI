@@ -41,8 +41,9 @@ const AprendeJugando = () => {
           <HeroSwitcher />
         </div>
         <p className="jugando__info">
-          Es un juego de trivia,mediante una ruleta dividida en seis categorías,
-          permite evaluar los conocimientos del usuario acerca de temas como{" "}
+          Es un juego de trivia, mediante una ruleta dividida en seis
+          categorías, permite evaluar los conocimientos del usuario acerca de
+          temas como{" "}
           <strong>salud, sexualidad, derechos, diversidad, prevención.</strong>
         </p>
       </div>

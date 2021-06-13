@@ -1,0 +1,51 @@
+@use "../../sass/colors";
+
+.subscribirse-btn {
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+  @media (min-width: 1200px) {
+    min-width: 280px;
+  }
+  .suscribe-input {
+    flex: 1;
+    margin-right: 10px;
+    outline: none;
+    border: solid 1px colors.$gris-medio;
+    border-radius: 10px;
+    height: 100%;
+    max-width: 244px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.1s all;
+
+    &:focus {
+      border: solid 2px colors.$rojo;
+    }
+  }
+  .send-icon-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 40px;
+    background-color: colors.$rojo;
+    border-radius: 8px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .send-icon {
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+}

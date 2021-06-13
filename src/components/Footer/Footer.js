@@ -4,19 +4,18 @@ import { Link } from "react-router-dom";
 
 //Componentes
 import InvitameCafecitoBtn from "../InvitameCafecitoBtn/InvitameCafecitoBtn";
+import SubscribirseBtn from "../SubscribirseBtn/SubscribirseBtn";
 
 //Iconos
-import { FiSend } from "react-icons/fi";
 import {
   FaFacebookSquare,
-  FaInstagramSquare,
+  FaInstagram,
   FaTwitter,
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
 import logoheader from "../../assets/img/logo-completo.png";
 import logocompleto from "../../assets/img/logo-completo.png";
-// import logoCafe from "../../assets/img/cafecito-logo.svg";
 
 //Style
 import "./Footer.scss";
@@ -75,9 +74,15 @@ const Footer = () => {
         <div className="suscripcion-donacion">
           <div className="suscripcion">
             <h1>SUSCRIBITE</h1>
-            <InvitameCafecitoBtn txtColor="#8fa2cc" bgColor="#fff" />
+
+            <SubscribirseBtn />
+
             {/* <div className="divWrap">
-              <input type="text" placeholder="tumail@ejemplo.com" />
+              <input
+                className="input-send"
+                type="button"
+                placeholder="tumail@ejemplo.com"
+              />
               <div className="logoSend">
                 <FiSend />
               </div>
@@ -99,7 +104,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaFacebookSquare className="social-icon" size="2rem" />
+                  <FaFacebookSquare className="fa-icon" />
                 </a>{" "}
               </li>
               <li>
@@ -108,7 +113,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaInstagramSquare size="2rem" />
+                  <FaInstagram className="fa-icon" />
                 </a>
               </li>
               <li>
@@ -117,7 +122,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaTwitter size="2rem" />
+                  <FaTwitter className="fa-icon" />
                 </a>
               </li>
               <li>
@@ -126,7 +131,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaLinkedin size="2rem" />
+                  <FaLinkedin className="fa-icon" />
                 </a>
               </li>
               <li>
@@ -135,7 +140,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaYoutube size="2rem" />
+                  <FaYoutube className="fa-icon" />
                 </a>
               </li>
             </ul>

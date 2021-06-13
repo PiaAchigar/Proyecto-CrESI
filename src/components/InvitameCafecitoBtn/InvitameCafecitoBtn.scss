@@ -2,7 +2,13 @@
 
 .cafecito-btn {
   display: flex;
+  justify-content: center;
   height: 2.5rem;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    justify-content: unset;
+  }
 
   .cafecito-logo {
     height: 100%;
@@ -13,9 +19,13 @@
     border: solid 1px colors.$cafecito;
     border-radius: 10px;
     height: 100%;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.25rem;
     cursor: pointer;
     transition: 0.1s all;
+
+    @media (min-width: 1200px) {
+      max-width: 100%;
+    }
 
     &:hover {
       border: solid 2px white;

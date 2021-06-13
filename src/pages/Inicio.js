@@ -23,7 +23,7 @@ const Inicio = () => {
   return (
     <div className="page-wrapper">
       <BubbleContainer content={<AprendeJugando />}>
-        <Bubble height="125px" top="-5%" left="-5%" gris />
+        <Bubble height="125px" top="-5%" left="-5%" amarillo />
         <Bubble height="125px" top="30%" left="50%" celeste />
       </BubbleContainer>
       <BubbleContainer content={<QuienesSomos />}>
