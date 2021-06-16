@@ -18,7 +18,7 @@ const Visitas = () => {
     <div className="page-wrapper">
       <BubbleContainer content={<ContenidoVisitas />}>
         <Bubble height="160px" top="-1" left="-1%" amarillo />
-        <Bubble height="100px" top="40%" left="1%" violeta />
+        <Bubble height="100px" top="40%" left="1%" naranja />
         <Bubble height="160px" top="50%" right="5%" celeste />
         <Bubble height="90px" top="80%" right="40%" rosa />
         <Bubble height="90px" top="1%" right="5%" rosa />

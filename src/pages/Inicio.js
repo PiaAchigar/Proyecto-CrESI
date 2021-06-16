@@ -27,14 +27,15 @@ const Inicio = () => {
         <Bubble height="125px" top="30%" left="50%" celeste />
       </BubbleContainer>
       <BubbleContainer content={<QuienesSomos />}>
-        <Bubble height="175px" top="0" left="15%" naranja />
-        <Bubble height="125px" top="40%" right="10%" rosa />
+        <Bubble height="150px" top="0" left="35%" naranja />
+        <Bubble height="125px" top="45%" right="10%" rosa />
+        <Bubble height="125px" top="55%" left="-5%" violeta />
       </BubbleContainer>
       <BubbleContainer content={<Premios />}>
-        <Bubble height="25vw" top="-10%" right="10%" amarillo />
+        <Bubble height="20vw" top="0" right="18%" amarillo />
       </BubbleContainer>
       <BubbleContainer content={<QueDicen />}>
-        <Bubble height="15vw" top="-10%" right="10%" amarillo />
+        <Bubble height="15vw" top="-25%" left="10%" rosa />
       </BubbleContainer>
       <BubbleContainer content={<Apoyo />}>
         <Bubble height="7vw" top="-20%" right="35%" celeste />
