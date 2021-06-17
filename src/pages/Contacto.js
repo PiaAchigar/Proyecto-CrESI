@@ -18,9 +18,9 @@ const Contacto = () => {
 
   return (
     <div className="page-wrapper">
-      <BubbleContainer content={<Contactanos />} hidden>
-        <Bubble height="225px" top="0" left="0" celeste />
-        <Bubble height="55px" bottom="5%" right="25%" rosa />
+      <BubbleContainer content={<Contactanos />}>
+        <Bubble height="200px" top="-1vw" left="0" celeste />
+        <Bubble height="100px" bottom="25%" right="5%" rosa />
       </BubbleContainer>
     </div>
   );

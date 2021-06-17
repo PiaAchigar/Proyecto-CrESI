@@ -19,8 +19,10 @@ const Recursos = () => {
   return (
     <div className="page-wrapper">
       <BubbleContainer content={<RecursosComponente />}>
-        <Bubble height="10vw" top="0" left="20vw" naranja />
-        <Bubble height="5vw" bottom="10%" right="0" verde />
+        <Bubble height="10vw" top="0" left="35vw" naranja />
+        <Bubble height="15vw" top="35vw" right="-1vw" amarillo />
+        <Bubble height="8vw" bottom="12%" right="5vw" verde />
+        <Bubble height="10vw" bottom="25vw" left="0" celeste />
       </BubbleContainer>
     </div>
   );
