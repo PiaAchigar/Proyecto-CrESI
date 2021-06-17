@@ -1,11 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 //Components
 import Mailto from "../../components/Mailto";
 //Imagenes
 import logoheader from "../../assets/img/logo-header.png";
-import logocompleto from "../../assets/img/logo-completo.png";
+//Context
+import { CartContext } from "../../context/cartContext";
+
 //Iconos
 import { MdShoppingCart } from "react-icons/md";
 import { MdClose } from "react-icons/md";
@@ -23,10 +25,23 @@ import { HiOutlineMail } from "react-icons/hi";
 import "./Header.scss";
 
 const Header = () => {
+  //
   const [nav, setNav] = useState(false);
 
+  const { cartTotalItems } = useContext(CartContext);
   //Referencia del header
   const headerRef = useRef();
+  //Referencia del contador del icono de carrito
+  const cartSpanRef = useRef();
+
+  //Cada vez que cambia el total de items agrego la clase bounce y 2,2 seg despues la quito.
+  useEffect(() => {
+    cartSpanRef.current.className = "cart-span bounce-1";
+
+    return setTimeout(() => {
+      cartSpanRef.current.className = "cart-span";
+    }, 2200);
+  }, [cartTotalItems]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -232,6 +247,13 @@ const Header = () => {
           </NavLink>
           <NavLink className="cart" to="/carrito">
             <MdShoppingCart className="cart-icon" size="2rem" />
+            <span
+              className="cart-span"
+              hidden={cartTotalItems <= 0}
+              ref={cartSpanRef}
+            >
+              {cartTotalItems}
+            </span>
           </NavLink>
         </div>
       </header>

@@ -12,6 +12,7 @@ import Carrito from "./pages/Carrito";
 import DetalleProducto from "./pages/DetalleProducto";
 import Politica from "./pages/Politica";
 import FinalizarCompra from "./pages/FinalizarCompra";
+import PlayOnline from "./pages/PlayOnline";
 
 //Componentes
 //Estos tres componentes se encuentran fuera de el SWITCH ya que ellos estan siempre en todas las vista.
@@ -40,6 +41,7 @@ function App() {
           <Route path="/carrito" component={Carrito} />
           <Route path="/finalizar-compra" component={FinalizarCompra} />
           <Route path="/politicas" component={Politica} />
+          <Route path="/play-online" component={PlayOnline} />
         </Switch>
         <WhatsappFloat />
         <Footer />

@@ -123,7 +123,7 @@ const ContactForm = () => {
       <h1>
         Tu mensaje ha sido enviado, pronto nos pondremos en contacto contigo!
       </h1>
-      <HiOutlineMail className="mail-icon bounce-1" />
+      <HiOutlineMail className="mail-icon bounce-infinite" />
       <img src={logoheader} alt="logo cresi" />
       <p>
         CrESI<sup>&reg;</sup>

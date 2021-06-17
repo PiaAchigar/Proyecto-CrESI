@@ -12,7 +12,7 @@ const InvitameCafecitoBtn = ({ txtColor, bgColor }) => {
       <img
         src={logoCafe}
         alt="ilustracion taza de cafe"
-        className={hover ? "cafecito-logo bounce-1" : "cafecito-logo"}
+        className={hover ? "cafecito-logo bounce-infinite" : "cafecito-logo"}
       />
       <a
         href="https://cafecito.app/cresi"

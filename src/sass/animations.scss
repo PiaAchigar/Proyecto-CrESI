@@ -1,11 +1,11 @@
 //CLASES PARA DAR ANIMACIONES
-
-.bounce-1 {
-  -webkit-animation: bounce-1 2s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
-  animation: bounce-1 2s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+.bounce-infinite {
+  -webkit-animation: bounce-infinite 2s infinite
+    cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation: bounce-infinite 2s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
   transform-origin: bottom;
 
-  @-webkit-keyframes bounce-1 {
+  @-webkit-keyframes bounce-infinite {
     0% {
       transform: scale(1, 1) translateY(0);
     }
@@ -28,7 +28,7 @@
       transform: scale(1, 1) translateY(0);
     }
   }
-  @keyframes bounce-1 {
+  @keyframes bounce-infinite {
     0% {
       transform: scale(1, 1) translateY(0);
     }
@@ -51,4 +51,14 @@
       transform: scale(1, 1) translateY(0);
     }
   }
+}
+.bounce-1 {
+  @extend .bounce-infinite;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.bounce-2 {
+  @extend .bounce-infinite;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
 }
