@@ -43,7 +43,7 @@ const ItemRow = ({ name, price, quantity, img, id }) => {
 
       <div className="wrapper-two">
         <div className="item__price">
-          <span>Precio</span>
+          <span>Precio x {quantity}</span>
           <p>${price * quantity}</p>
         </div>
 
