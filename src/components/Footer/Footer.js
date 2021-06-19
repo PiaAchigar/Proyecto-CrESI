@@ -58,7 +58,7 @@ const Footer = () => {
                   <h1>LINKS ÚTILES</h1>
                 </li>
                 <li>
-                  <Link to="/">Juego online</Link>
+                  <Link to="/play-online">Juego online</Link>
                 </li>
                 <li>
                   <Link to="/tienda">Tienda</Link>

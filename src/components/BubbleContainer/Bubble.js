@@ -6,7 +6,6 @@ import circleColors from "../../assets/circle-colors-vars";
 import "./Bubble.scss";
 const Bubble = ({
   height,
-  width,
   top,
   bottom,
   left,
@@ -21,7 +20,15 @@ const Bubble = ({
 }) => {
   const checkColor = () => {
     //si no se paso nigun color props dara propColor = false//
-    let propColor = amarillo || violeta || naranja || celeste || verde || rosa || gris || false;
+    let propColor =
+      amarillo ||
+      violeta ||
+      naranja ||
+      celeste ||
+      verde ||
+      rosa ||
+      gris ||
+      false;
     let colors = circleColors;
     //Chequeo el color y devuelvo su valor en rgba para aplicar al BubbleStyle
     switch (propColor) {
