@@ -2,7 +2,7 @@
 
 ## Mi participación
 
-En este proyecto realice Maquetación y estilado de : Footer, del componente "Visitas a Escuelas" y "Políticas de Privacidad".
+En éste proyecto realice maquetación y estilado de : Footer, del componente "Visitas a Escuelas" y "Políticas de Privacidad".
 
 ## Pasos para correr el proyecto
 
