@@ -1,5 +1,9 @@
 # Proyecto CrESI
 
+## Mi participación
+
+En este proyecto realice Maquetación y estilado de : Footer, del componente "Visitas a Escuelas" y "Políticas de Privacidad".
+
 ## Pasos para correr el proyecto
 
 1.  Una vez clonado el proyecto, abrir la carpeta cresi en VsCode o IDE de preferencia y abrir la terminal del mismo.
